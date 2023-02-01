@@ -1,0 +1,124 @@
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: var(--clr-grey-3);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+    :hover {
+      background: var(--clr-primary-8);
+      color: var(--clr-primary-5);
+      padding-left: 1.5rem;
+    }
+  }
+  .active {
+    color: var(--clr-primary-5);
+  }
+  nav {
+    background: var(--clr-white);
+    box-shadow: var(--light-shadow);
+    border-bottom: 1px solid var(--base0E);
+  }
+  .nav-center {
+    /* height: 100vh; */
+  }
+
+  .logo {
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .nav-toggle {
+    font-size: 1.7rem;
+    color: var(--clr-primary-5);
+    background: transparent;
+    border-color: transparent;
+    /* transition: var(--transition); */
+    cursor: pointer;
+
+    width: 70px;
+    height: 30px;
+    border-radius: 50px;
+    background: var(--accent);
+  }
+
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .links-container {
+    height: 0;
+    overflow: hidden;
+    /* height: auto !important; */
+    transition: var(--transition);
+  }
+  .show-container {
+    height: 10rem;
+  }
+  .social-icons {
+    display: none;
+  }
+
+  @media (min-width: 720px) {
+    .links-container {
+      height: auto !important;
+    }
+    a {
+      padding: 0;
+      margin: 0 0.5rem;
+      :hover {
+        padding: 0;
+        background: transparent;
+      }
+    }
+    .nav-center {
+      /* max-width: 1170px; */
+      width: 95%;
+      margin: 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .nav-toggle {
+      display: none;
+    }
+    .nav-header {
+      padding: 0;
+    }
+    .links {
+      display: flex;
+      flex-direction: row;
+    }
+    .social-icons {
+      display: flex;
+      margin: 0 0;
+      padding: 0 0;
+    }
+    .social-icons svg {
+      margin: 0 0.5rem;
+      color: var(--clr-primary-5);
+      transition: var(--transition);
+      font-size: 1.5rem;
+      cursor: pointer;
+      :hover {
+        color: var(--clr-primary-7);
+      }
+    }
+    .logo {
+      height: 30px;
+    }
+  }
+`;
+export default Wrapper;
