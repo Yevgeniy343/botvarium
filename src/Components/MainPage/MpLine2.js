@@ -1,16 +1,17 @@
 import Wrapper from "./wr-MpLine2";
 import { useState } from "react";
 import { VscCode } from "react-icons/vsc";
+import Direction1 from "../MainPage/Directions/Direction1";
 
 const MpLine2 = () => {
-  const [value, setValue] = useState(1);
+  const [value, setValue] = useState(0);
   console.log(value);
 
   return (
     <Wrapper>
       <div className="left-block">
-        {value === 1 ? (
-          <div>1</div>
+        {value === 0 ? (
+          <Direction1 />
         ) : value === 2 ? (
           <div>2</div>
         ) : value === 3 ? (
@@ -20,6 +21,13 @@ const MpLine2 = () => {
         )}
       </div>
       <div className="direction">
+        <div
+          className={value === 0 ? "direction-item active" : "direction-item"}
+          onClick={() => setValue(0)}
+        >
+          <VscCode />
+          <p>Разработка адаптивных веб приложений</p>
+        </div>
         <div
           className={value === 1 ? "direction-item active" : "direction-item"}
           onClick={() => setValue(1)}
@@ -47,6 +55,13 @@ const MpLine2 = () => {
         >
           <VscCode />
           <p>Визуализация данных</p>
+        </div>
+        <div
+          className={value === 5 ? "direction-item active" : "direction-item"}
+          onClick={() => setValue(5)}
+        >
+          <VscCode />
+          <p>Разраблтка еще чего-либо</p>
         </div>
       </div>
     </Wrapper>

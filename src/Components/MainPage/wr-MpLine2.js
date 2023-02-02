@@ -5,6 +5,7 @@ const Wrapper = styled.main`
   display: grid;
   grid-template-columns: 1fr;
   border-bottom: 1px gray solid;
+  height: 400px;
   .left-block {
     display: none;
     p {
@@ -13,6 +14,7 @@ const Wrapper = styled.main`
     }
   }
   .direction {
+    /* margin: 1rem; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -65,16 +67,27 @@ const Wrapper = styled.main`
   }
 
   @media (min-width: 720px) {
-    grid-template-columns: 3fr 2fr;
+    height: 500px;
+    grid-template-columns: 4fr 2fr;
     .left-block {
       display: block;
+      overflow-y: auto;
+      padding-right: 3rem;
     }
   }
   .direction {
     margin-top: 1rem;
   }
+  .left-block {
+    overflow-y: auto;
+    height: 95%;
+  }
   @media (min-width: 992px) {
+    height: 500px;
     grid-template-columns: 4fr 2fr;
+    .left-block {
+      height: 95%;
+    }
   }
 `;
 export default Wrapper;
