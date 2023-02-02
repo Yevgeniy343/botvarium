@@ -21,6 +21,7 @@ const Wrapper = styled.div`
   }
   nav {
     background: var(--clr-white);
+
     box-shadow: var(--light-shadow);
     border-bottom: 1px solid var(--base0E);
   }
