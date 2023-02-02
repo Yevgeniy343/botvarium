@@ -26,7 +26,7 @@ const MpLine2 = () => {
           onClick={() => setValue(0)}
         >
           <VscCode />
-          <p>Разработка адаптивных веб приложений</p>
+          <p>Разработка адаптивных веб-приложений</p>
         </div>
         <div
           className={value === 1 ? "direction-item active" : "direction-item"}
