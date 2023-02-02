@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.main`
   margin: 0 1rem;
-  padding: 1rem;
-  border-bottom: 1px gray solid;
+  padding: 4rem;
 
   .container {
     display: flex;
@@ -15,8 +14,14 @@ const Wrapper = styled.main`
     height: 40px;
   }
   .about {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     p {
       font-size: 1.5rem;
+      color: var(--clr-grey-3);
     }
   }
   @media (min-width: 720px) {

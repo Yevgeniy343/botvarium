@@ -25,42 +25,54 @@ const MpLine2 = () => {
           className={value === 0 ? "direction-item active" : "direction-item"}
           onClick={() => setValue(0)}
         >
-          <VscCode />
+          <div className="icon">
+            <VscCode />
+          </div>
           <p>Разработка адаптивных веб-приложений</p>
         </div>
         <div
           className={value === 1 ? "direction-item active" : "direction-item"}
           onClick={() => setValue(1)}
         >
-          <VscCode />
+          <div className="icon">
+            <VscCode />
+          </div>
           <p>Разработка личных кабинетов пользователей</p>
         </div>
         <div
           className={value === 2 ? "direction-item active" : "direction-item"}
           onClick={() => setValue(2)}
         >
-          <VscCode />
+          <div className="icon">
+            <VscCode />
+          </div>
           <p>Разработка личных кабинетов для клиетов Вашей компании</p>
         </div>
         <div
           className={value === 3 ? "direction-item active" : "direction-item"}
           onClick={() => setValue(3)}
         >
-          <VscCode />
+          <div className="icon">
+            <VscCode />
+          </div>
           <p>Разработка корпоративных порталов</p>
         </div>
         <div
           className={value === 4 ? "direction-item active" : "direction-item"}
           onClick={() => setValue(4)}
         >
-          <VscCode />
+          <div className="icon">
+            <VscCode />
+          </div>
           <p>Визуализация данных</p>
         </div>
         <div
           className={value === 5 ? "direction-item active" : "direction-item"}
           onClick={() => setValue(5)}
         >
-          <VscCode />
+          <div className="icon">
+            <VscCode />
+          </div>
           <p>Разраблтка еще чего-либо</p>
         </div>
       </div>

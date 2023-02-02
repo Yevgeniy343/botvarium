@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 const Wrapper = styled.main`
   margin: 1rem;
+  .icon {
+    font-size: 2.2rem;
+    margin-right: 1rem;
+  }
   .left-block {
     display: none;
   }
@@ -13,7 +17,6 @@ const Wrapper = styled.main`
     align-items: center;
   }
   .direction-item {
-    display: grid;
     width: 80%;
     border: 1px solid var(--base0E);
     box-shadow: var(--box-shadow);
@@ -22,8 +25,8 @@ const Wrapper = styled.main`
     margin: 0.5rem;
     border-radius: 10px;
     align-items: center;
-
     cursor: pointer;
+
     :hover {
       box-shadow: var(--box-shadow-active);
       svg {
@@ -40,11 +43,6 @@ const Wrapper = styled.main`
     svg {
       color: var(--bs-blue);
     }
-  }
-
-  svg {
-    font-size: 2.2rem;
-    margin-right: 1rem;
   }
 
   @media (min-width: 720px) {
