@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  ul {
-    list-style-type: none;
-  }
   a {
     text-decoration: none;
     color: var(--clr-grey-3);

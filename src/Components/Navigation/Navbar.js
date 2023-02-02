@@ -12,14 +12,12 @@ import { activeLinkHandler } from "../../features/userSlice";
 
 const Navbar = () => {
   const { activeLink } = useSelector((store) => store.user);
-  console.log(activeLink.id);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const linksContainerRef = useRef();
   const linksRef = useRef();
 
   const [showLinks, setShowLinks] = useState(false);
-  const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
@@ -59,7 +57,6 @@ const Navbar = () => {
                 const { text, path, icon, id } = link;
                 return (
                   <Link
-                    // className="link-hover"
                     key={id}
                     to={path}
                     className={

@@ -1,15 +1,17 @@
 import Wrapper from "./wr-MpLine1";
-import { SiApachetomcat } from "react-icons/si";
+import logo from "../../assets/imgs/logo.png";
 
 const MpLine1 = () => {
   return (
     <Wrapper>
-      <div className="left-block">
-        <p>Разработка личных кабинетов пользователей и визуалтзация данных</p>
-      </div>
-      <div className="right-block">
-        <SiApachetomcat />
-        <SiApachetomcat style={{ transform: "rotate(180deg)" }} />
+      <div className="container">
+        <div>
+          <img src={logo} alt="" className="logo" />
+        </div>
+        <div className="about">
+          <p>Разработка личных кабинетов</p>
+          <p>Визуализация данных</p>
+        </div>
       </div>
     </Wrapper>
   );
