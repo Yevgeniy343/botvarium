@@ -5,13 +5,12 @@ import Direction1 from "../MainPage/Directions/Direction1";
 
 const MpLine2 = () => {
   const [value, setValue] = useState(0);
-  console.log(value);
 
   return (
     <Wrapper>
       <div className="left-block">
         {value === 0 ? (
-          <Direction1 />
+          <Direction1 className="progress-bar" />
         ) : value === 2 ? (
           <div>2</div>
         ) : value === 3 ? (

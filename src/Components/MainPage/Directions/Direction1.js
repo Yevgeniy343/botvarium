@@ -1,6 +1,11 @@
 import styled from "styled-components";
+import { motion, useScroll } from "framer-motion";
+import { useRef } from "react";
 
 const Direction1 = () => {
+  const ref = useRef(null);
+  const { scrollXProgress } = useScroll({ container: ref });
+
   return (
     <Wrapper>
       <div className="content">
@@ -50,6 +55,16 @@ const Wrapper = styled.div`
       padding-top: 1rem;
     }
   }
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--red);
+    transform-origin: 0%;
+  }
+
   @media (min-width: 992px) {
   }
   @media (min-width: 720px) {

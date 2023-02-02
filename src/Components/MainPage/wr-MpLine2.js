@@ -2,12 +2,44 @@ import styled from "styled-components";
 
 const Wrapper = styled.main`
   margin: 1rem;
+
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--red);
+    transform-origin: 0%;
+  }
   .icon {
     font-size: 2.2rem;
     margin-right: 1rem;
   }
   .left-block {
-    display: none;
+    /* display: none; */
+
+    /* display: block; */
+    height: 40vh;
+    /* width: 90vw; */
+    padding: 0.5rem;
+    overflow-y: auto;
+    border: 1px solid var(--base0E);
+
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 13px;
+    }
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--base0E);
+      border-radius: 10px;
+    }
+
+    padding-right: 2rem;
   }
   .direction {
     width: 100%;
@@ -40,9 +72,9 @@ const Wrapper = styled.main`
   .active {
     border: 2px solid var(--bs-blue);
     box-shadow: var(--box-shadow-active);
-    svg {
+    /* svg {
       color: var(--bs-blue);
-    }
+    } */
   }
 
   @media (min-width: 720px) {
@@ -53,6 +85,19 @@ const Wrapper = styled.main`
       display: block;
       height: 95%;
       overflow-y: auto;
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 13px;
+      }
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--base0E);
+        border-radius: 10px;
+      }
+
       padding-right: 2rem;
     }
   }
