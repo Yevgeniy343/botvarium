@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const Wrapper = styled.main`
-  margin: 0 1rem;
-  padding: 4rem;
+  margin: 0;
+  padding: 2rem 0;
 
   .container {
     display: flex;
@@ -20,7 +20,7 @@ const Wrapper = styled.main`
     justify-content: center;
     align-items: center;
     p {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: var(--clr-grey-3);
     }
   }

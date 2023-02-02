@@ -20,8 +20,9 @@ const Wrapper = styled.main`
     /* display: none; */
 
     /* display: block; */
-    height: 40vh;
+    height: 50vh;
     /* width: 90vw; */
+
     padding: 0.5rem;
     overflow-y: auto;
     border: 1px solid var(--base0E);
@@ -82,7 +83,8 @@ const Wrapper = styled.main`
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     .left-block {
-      display: block;
+      border: none;
+      /* display: block; */
       height: 95%;
       overflow-y: auto;
       ::-webkit-scrollbar {
