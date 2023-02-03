@@ -1,35 +1,18 @@
 import styled from "styled-components";
 
 const Wrapper = styled.main`
-  margin: 1rem;
+  display: grid;
 
-  .progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-    background: var(--red);
-    transform-origin: 0%;
-  }
-  .icon {
-    font-size: 2.2rem;
-    margin-right: 1rem;
-  }
+  /* grid-gap: 1rem; */
   .left-block {
-    /* display: none; */
-
-    /* display: block; */
     height: 50vh;
-    /* width: 90vw; */
-
-    padding: 0.5rem;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
     overflow-y: auto;
-    border: 1px solid var(--base0E);
 
     ::-webkit-scrollbar {
-      width: 10px;
-      height: 13px;
+      width: 5px;
+      /* height: 13px; */
     }
     ::-webkit-scrollbar-track {
       box-shadow: inset 0 0 5px grey;
@@ -39,27 +22,32 @@ const Wrapper = styled.main`
       background: var(--base0E);
       border-radius: 10px;
     }
-
-    padding-right: 2rem;
   }
   .direction {
-    width: 100%;
+    p {
+      text-indent: 0;
+    }
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    margin: 1rem 0;
   }
   .direction-item {
-    width: 80%;
-    border: 1px solid var(--base0E);
-    box-shadow: var(--box-shadow);
     display: flex;
-    padding: 1rem 1rem;
-    margin: 0.5rem;
-    border-radius: 10px;
+    width: max-content;
+    justify-content: center;
     align-items: center;
+    margin: 0.5rem 0.5rem;
+    border: 1px solid var(--base0E);
+    background-color: var(--clr-primary-11);
+    border-radius: 20px;
+    padding: 0.6rem 0.6rem;
     cursor: pointer;
-
+    svg {
+      display: none;
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
     :hover {
       box-shadow: var(--box-shadow-active);
       svg {
@@ -73,48 +61,41 @@ const Wrapper = styled.main`
   .active {
     border: 2px solid var(--bs-blue);
     box-shadow: var(--box-shadow-active);
-    /* svg {
+    svg {
       color: var(--bs-blue);
-    } */
-  }
-
-  @media (min-width: 720px) {
-    height: 500px;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    .left-block {
-      border: none;
-      /* display: block; */
-      height: 95%;
-      overflow-y: auto;
-      ::-webkit-scrollbar {
-        width: 10px;
-        height: 13px;
-      }
-      ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey;
-        border-radius: 10px;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: var(--base0E);
-        border-radius: 10px;
-      }
-
-      padding-right: 2rem;
     }
+  }
+  @media (min-width: 720px) {
   }
 
   @media (min-width: 992px) {
+    .direction-item {
+      padding: 0.3rem 0.4rem;
+
+      svg {
+        display: block;
+      }
+    }
   }
 
   @media (min-width: 1140px) {
-    .direction {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    .left-block {
+      height: 60vh;
     }
     .direction-item {
-      height: 100px;
+      min-width: max-content;
+      width: 90%;
+      height: max-content;
+      margin-right: 0 2rem;
+      padding: 1rem 1rem;
+      border-radius: 10px;
+      justify-content: start;
     }
+  }
+
+  @media (min-width: 1320px) {
+    grid-template-columns: 4fr 1fr;
   }
 `;
 export default Wrapper;

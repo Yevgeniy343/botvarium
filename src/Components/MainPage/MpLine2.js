@@ -10,7 +10,7 @@ const MpLine2 = () => {
     <Wrapper>
       <div className="left-block">
         {value === 0 ? (
-          <Direction1 className="progress-bar" />
+          <Direction1 />
         ) : value === 2 ? (
           <div>2</div>
         ) : value === 3 ? (
@@ -27,7 +27,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>Разработка адаптивных веб-приложений</p>
+          <p>адаптивные веб-приложения</p>
         </div>
         <div
           className={value === 1 ? "direction-item active" : "direction-item"}
@@ -36,7 +36,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>Разработка личных кабинетов пользователей</p>
+          <p>личные кабинеты клиентов</p>
         </div>
         <div
           className={value === 2 ? "direction-item active" : "direction-item"}
@@ -45,7 +45,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>Разработка личных кабинетов для клиетов Вашей компании</p>
+          <p>личные кабинеты партнеров</p>
         </div>
         <div
           className={value === 3 ? "direction-item active" : "direction-item"}
@@ -54,7 +54,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>Разработка корпоративных порталов</p>
+          <p>корпоративные порталы</p>
         </div>
         <div
           className={value === 4 ? "direction-item active" : "direction-item"}
@@ -63,7 +63,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>Визуализация данных</p>
+          <p>корпоративные мессенджеры</p>
         </div>
         <div
           className={value === 5 ? "direction-item active" : "direction-item"}
@@ -72,7 +72,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>Разраблтка еще чего-либо</p>
+          <p>разработка еще чего-либо</p>
         </div>
       </div>
     </Wrapper>
