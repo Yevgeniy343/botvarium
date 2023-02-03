@@ -4,7 +4,7 @@ const Wrapper = styled.div`
   a {
     text-decoration: none;
     color: var(--clr-grey-3);
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     display: block;

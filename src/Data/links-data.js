@@ -1,11 +1,11 @@
 import { BsCheck2 } from "react-icons/bs";
 const links = [
-  // {
-  //   id: 1,
-  //   text: "main page",
-  //   path: "/",
-  //   icon: <BsCheck2 />,
-  // },
+  {
+    id: 1,
+    text: "Знания",
+    path: "/knowledge",
+    // icon: <BsCheck2 />,
+  },
   {
     id: 2,
     text: "about us",

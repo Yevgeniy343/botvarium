@@ -3,6 +3,7 @@ import AboutPage from "./Pages/AboutPage";
 import ArticlesPage from "./Pages/ArticlesPage";
 import CasePage from "./Pages/CasePage";
 import InfoPage from "./Pages/InfoPage";
+import Knowledge from "./Pages/Knowledge/Knowledge";
 import {
   RouterProvider,
   createBrowserRouter,
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   { path: "/case", element: <CasePage /> },
   { path: "/articles", element: <ArticlesPage /> },
   { path: "/info", element: <InfoPage /> },
+  { path: "/knowledge", element: <Knowledge /> },
 ]);
 
 function App() {
