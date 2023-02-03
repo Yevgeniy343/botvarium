@@ -38,7 +38,7 @@ const Wrapper = styled.main`
     justify-content: center;
     align-items: center;
     margin: 0.5rem 0.5rem;
-    border: 1px solid var(--base0E);
+    border: 2px solid var(--base0E);
     background-color: var(--clr-primary-11);
     border-radius: 20px;
     padding: 0.6rem 0.6rem;
