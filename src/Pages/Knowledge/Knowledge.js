@@ -51,6 +51,7 @@ function Word({ children, ...props }) {
       {...props}
       {...fontProps}
       children={children}
+      onPointerDown={test}
     />
   );
 }
@@ -96,7 +97,7 @@ const Knowledge = () => {
       <Navbar />
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }}>
         <fog attach="fog" args={["#202025", 0, 90]} />
-        <Cloud count={8} radius={wW / 60} />
+        <Cloud count={8} radius={20} />
         <TrackballControls />
         {/* <OrbitControls /> */}
       </Canvas>

@@ -13,6 +13,7 @@ import {
   activeLinkHandler,
   menuToggleHandler,
   openSubmenu,
+  closeSubmenu,
 } from "../../features/userSlice";
 
 const Navbar = () => {
@@ -22,17 +23,23 @@ const Navbar = () => {
   const linksContainerRef = useRef();
   const linksRef = useRef();
 
+  const submenuHandler = (e) => {
+    if (!e.target.classList.contains("link-btn")) {
+      dispatch(closeSubmenu());
+    }
+  };
+
   const displaySubmenu = (e) => {
     const page = e.target.textContent;
     const tempBtn = e.target.getBoundingClientRect();
     const center = (tempBtn.left + tempBtn.right) / 2;
-    // console.log(center);
+    // console.log(e);
     const bottom = tempBtn.bottom - 3;
     dispatch(openSubmenu({ page, center, bottom }));
   };
 
   return (
-    <Wrapper>
+    <Wrapper onMouseOver={submenuHandler}>
       <nav>
         <div className="nav-center">
           <div className="nav-header">
@@ -60,19 +67,23 @@ const Navbar = () => {
             <ul className="links">
               <li>
                 <button onMouseOver={displaySubmenu} className="link-btn">
-                  pruducts
+                  Услуги
                 </button>
               </li>
               <li>
-                <button onMouseOver={displaySubmenu} className="link-btn">
-                  developers
+                <button
+                  onMouseOver={displaySubmenu}
+                  className="link-btn"
+                  onClick={() => navigate("/knowledge")}
+                >
+                  Знания
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button onMouseOver={displaySubmenu} className="link-btn">
                   company
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
 
