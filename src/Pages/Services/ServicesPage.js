@@ -1,14 +1,14 @@
-import Navbar from "../Components/Navigation/Navbar";
+import Navbar from "../../Components/Navigation/Navbar";
 
-const AboutPage = () => {
+const ServicesPage = () => {
   return (
     <div>
       <Navbar />
       <div style={{ display: "flex", justifyContent: "end", margin: "2rem" }}>
-        <h3>About page</h3>
+        <h3>Services page</h3>
       </div>
     </div>
   );
 };
 
-export default AboutPage;
+export default ServicesPage;

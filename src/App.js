@@ -1,5 +1,5 @@
 import MainPage from "./Pages/MainPage";
-import AboutPage from "./Pages/AboutPage";
+import ServicesPage from "./Pages/Services/ServicesPage";
 import ArticlesPage from "./Pages/ArticlesPage";
 import CasePage from "./Pages/CasePage";
 import InfoPage from "./Pages/InfoPage";
@@ -13,7 +13,7 @@ import {
 
 const router = createBrowserRouter([
   { path: "/", element: <MainPage /> },
-  { path: "/about", element: <AboutPage /> },
+  { path: "/services", element: <ServicesPage /> },
   { path: "/case", element: <CasePage /> },
   { path: "/articles", element: <ArticlesPage /> },
   { path: "/info", element: <InfoPage /> },

@@ -5,28 +5,31 @@ import logo from "../../assets/imgs/logo.png";
 import { FaApple, FaGithub, FaNpm } from "react-icons/fa";
 import { BsXLg, BsDistributeVertical } from "react-icons/bs";
 import links from "../../Data/links-data";
+import sublinks from "../../Data/sub-links";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { activeLinkHandler } from "../../features/userSlice";
+import {
+  activeLinkHandler,
+  menuToggleHandler,
+  openSubmenu,
+} from "../../features/userSlice";
 
 const Navbar = () => {
-  const { activeLink } = useSelector((store) => store.user);
+  const { activeLink, menuToggle } = useSelector((store) => store.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const linksContainerRef = useRef();
   const linksRef = useRef();
 
-  const [showLinks, setShowLinks] = useState(false);
-
-  useEffect(() => {
-    const linksHeight = linksRef.current.getBoundingClientRect().height;
-    if (showLinks) {
-      linksContainerRef.current.style.height = `${linksHeight}px`;
-    } else {
-      linksContainerRef.current.style.height = "0px";
-    }
-  }, [showLinks]);
+  const displaySubmenu = (e) => {
+    const page = e.target.textContent;
+    const tempBtn = e.target.getBoundingClientRect();
+    const center = (tempBtn.left + tempBtn.right) / 2;
+    // console.log(center);
+    const bottom = tempBtn.bottom - 3;
+    dispatch(openSubmenu({ page, center, bottom }));
+  };
 
   return (
     <Wrapper>
@@ -45,33 +48,32 @@ const Navbar = () => {
               transition={{ type: "spring", stiffness: 100, damping: 3 }}
               className="burger nav-toggle"
               whileTap={{ scale: 0.8 }}
-              onClick={() => setShowLinks(!showLinks)}
+              onClick={() => {
+                dispatch(menuToggleHandler());
+              }}
             >
-              {showLinks ? <BsXLg /> : <BsDistributeVertical />}
+              {menuToggle ? <BsXLg /> : <BsDistributeVertical />}
             </motion.div>
           </div>
 
-          <div className="links-container" ref={linksContainerRef}>
-            <div className="links" ref={linksRef}>
-              {links.map((link) => {
-                const { text, path, icon, id } = link;
-                return (
-                  <Link
-                    key={id}
-                    to={path}
-                    className={
-                      id === activeLink.id ? "link-hover active" : "link-hover"
-                    }
-                    onClick={() =>
-                      dispatch(activeLinkHandler({ id, text, path }))
-                    }
-                  >
-                    <span className="icon">{icon}</span>
-                    {text}
-                  </Link>
-                );
-              })}
-            </div>
+          <div className="links-container">
+            <ul className="links">
+              <li>
+                <button onMouseOver={displaySubmenu} className="link-btn">
+                  pruducts
+                </button>
+              </li>
+              <li>
+                <button onMouseOver={displaySubmenu} className="link-btn">
+                  developers
+                </button>
+              </li>
+              <li>
+                <button onMouseOver={displaySubmenu} className="link-btn">
+                  company
+                </button>
+              </li>
+            </ul>
           </div>
 
           <ul className="social-icons">

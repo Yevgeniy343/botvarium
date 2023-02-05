@@ -27,7 +27,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>адаптивные веб-приложения</p>
+          <p>веб-приложения</p>
         </div>
         <div
           className={value === 1 ? "direction-item active" : "direction-item"}
@@ -36,7 +36,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>личные кабинеты клиентов</p>
+          <p>личный кабинет клиентов</p>
         </div>
         <div
           className={value === 2 ? "direction-item active" : "direction-item"}

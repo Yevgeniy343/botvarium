@@ -1,10 +1,28 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  background: var(--clr-primary-9);
+
+  .burger {
+    z-index: 3;
+    position: sticky;
+  }
+  .link-btn {
+    height: 100%;
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.1rem;
+    /* color: white; */
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    width: 7rem;
+    cursor: pointer;
+  }
   a {
+    font-weight: 700;
     text-decoration: none;
-    color: var(--clr-grey-3);
-    font-size: 1rem;
+    color: var(--base0E);
+    font-size: 1.2rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     display: block;
@@ -20,8 +38,7 @@ const Wrapper = styled.div`
     color: var(--clr-primary-5);
   }
   nav {
-    background: var(--clr-white);
-
+    background: transparent;
     box-shadow: var(--light-shadow);
     border-bottom: 1px solid var(--base0E);
   }
@@ -32,6 +49,8 @@ const Wrapper = styled.div`
   .logo {
     height: 25px;
     cursor: pointer;
+    z-index: 3;
+    position: sticky;
   }
 
   .nav-toggle {

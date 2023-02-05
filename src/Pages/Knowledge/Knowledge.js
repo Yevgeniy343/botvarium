@@ -3,7 +3,7 @@ import Navbar from "../../Components/Navigation/Navbar";
 import * as THREE from "three";
 import { useRef, useState, useMemo, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Text, TrackballControls } from "@react-three/drei";
+import { OrbitControls, Text, TrackballControls } from "@react-three/drei";
 import { useNavigate } from "react-router-dom";
 
 // import randomWord from "random-words";
@@ -18,7 +18,7 @@ function Word({ children, ...props }) {
   const color = new THREE.Color();
   const fontProps = {
     font: "/Inter-Bold.woff",
-    fontSize: 1.5,
+    fontSize: 1,
     letterSpacing: -0.05,
     lineHeight: 1,
     "material-toneMapped": false,
@@ -96,8 +96,9 @@ const Knowledge = () => {
       <Navbar />
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }}>
         <fog attach="fog" args={["#202025", 0, 90]} />
-        <Cloud count={6} radius={wW / 42} />
+        <Cloud count={8} radius={wW / 60} />
         <TrackballControls />
+        {/* <OrbitControls /> */}
       </Canvas>
     </Wrapper>
   );
