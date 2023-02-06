@@ -30,14 +30,17 @@ const SubMenu = () => {
     <Wrapper>
       <aside className={isSubmenu ? "submenu show" : "submenu"} ref={container}>
         <h4>{subMenuLocation.page}</h4>
+        <hr />
         <div className={`submenu-center ${columns}`}>
           {currentLinks.map((link, index) => {
             const { url, icon, label } = link;
             return (
-              <Link key={index} to={url}>
-                <div className="icon">{icon}</div>
-                <div className="label">{label}</div>
-              </Link>
+              <div className="sub">
+                <Link key={index} to={url}>
+                  <div className="icon">{icon}</div>
+                  <div className="label">{label}</div>
+                </Link>
+              </div>
             );
           })}
         </div>

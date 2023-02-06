@@ -2,6 +2,7 @@ import Wrapper from "./wr-MpLine2";
 import { useState } from "react";
 import { VscCode } from "react-icons/vsc";
 import Direction1 from "../MainPage/Directions/Direction1";
+import WebApp from "../Services/WebApp";
 
 const MpLine2 = () => {
   const [value, setValue] = useState(0);
@@ -10,7 +11,7 @@ const MpLine2 = () => {
     <Wrapper>
       <div className="left-block">
         {value === 0 ? (
-          <Direction1 />
+          <WebApp />
         ) : value === 2 ? (
           <div>2</div>
         ) : value === 3 ? (
@@ -36,7 +37,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>личный кабинет клиентов</p>
+          <p>ЛК клиентов</p>
         </div>
         <div
           className={value === 2 ? "direction-item active" : "direction-item"}
@@ -45,7 +46,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>личные кабинеты партнеров</p>
+          <p>ЛК партнеров</p>
         </div>
         <div
           className={value === 3 ? "direction-item active" : "direction-item"}
@@ -54,7 +55,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>корпоративные порталы</p>
+          <p>корпоративный портал</p>
         </div>
         <div
           className={value === 4 ? "direction-item active" : "direction-item"}
@@ -63,7 +64,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>корпоративные мессенджеры</p>
+          <p>мессенджер</p>
         </div>
         <div
           className={value === 5 ? "direction-item active" : "direction-item"}
@@ -72,7 +73,7 @@ const MpLine2 = () => {
           <div className="icon">
             <VscCode />
           </div>
-          <p>разработка еще чего-либо</p>
+          <p>PWA-приложения</p>
         </div>
       </div>
     </Wrapper>

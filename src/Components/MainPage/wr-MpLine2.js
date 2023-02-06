@@ -5,14 +5,14 @@ const Wrapper = styled.main`
 
   /* grid-gap: 1rem; */
   .left-block {
-    height: 50vh;
+    /* height: 50vh; */
     padding: 0 0.5rem;
     margin: 0 0.5rem;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
       width: 5px;
-      /* height: 13px; */
+      height: 13px;
     }
     ::-webkit-scrollbar-track {
       box-shadow: inset 0 0 5px grey;
@@ -21,7 +21,7 @@ const Wrapper = styled.main`
     ::-webkit-scrollbar-thumb {
       background: var(--base0E);
       border-radius: 10px;
-    }
+    } */
   }
   .direction {
     p {
@@ -30,9 +30,10 @@ const Wrapper = styled.main`
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    margin: 1rem 0;
+    margin: 0 2rem;
   }
   .direction-item {
+    font-size: 0.9rem;
     display: flex;
     width: max-content;
     justify-content: center;
@@ -59,7 +60,7 @@ const Wrapper = styled.main`
     }
   }
   .active {
-    border: 2px solid var(--bs-blue);
+    border: 2px solid var(--theme-ui-colors-green50);
     box-shadow: var(--box-shadow-active);
     svg {
       color: var(--bs-blue);

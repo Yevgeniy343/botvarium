@@ -22,8 +22,8 @@ const MainPage = () => {
         <SubMenu />
         <MpLine1 />
         <MpLine2 />
-        <MpLine3 />
-        <MpLine4 />
+        {/* <MpLine3 />
+        <MpLine4 /> */}
       </Wrapper>
     </ThemeProvider>
   );

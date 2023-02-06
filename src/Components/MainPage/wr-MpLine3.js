@@ -20,7 +20,7 @@ const Wrapper = styled.main`
     background: linear-gradient(250deg, #b6bdca, #d19a66);
   }
 
-  @media (min-width: 720px) {
+  @media (min-width: 768px) {
     width: calc(100vw-100px);
   }
   @media (min-width: 992px) {

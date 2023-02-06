@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.main`
   margin: 0;
-  padding: 2rem 0;
+  padding: 4rem 0;
 
   .container {
     display: flex;
@@ -24,7 +24,7 @@ const Wrapper = styled.main`
       color: var(--clr-grey-3);
     }
   }
-  @media (min-width: 720px) {
+  @media (min-width: 768px) {
     margin: 0 2rem;
 
     .about {

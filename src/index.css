@@ -13,15 +13,72 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: Akzidenz Grotesk BQ Light, Helvetica;
 }
 :root {
+  --codeEditor: #55718d;
+  --gridSubcardBackground: #1f4468;
+
+  --theme-ui-colors-black10: #fafbfc;
+  --theme-ui-colors-black15: #f5f7fa;
+  --theme-ui-colors-black20: #e7eeec;
+  --theme-ui-colors-black30: #b8c4c2;
+  --theme-ui-colors-black40: #9fa1a2;
+  --theme-ui-colors-black50: #5d6c74;
+  --theme-ui-colors-black60: #3d4f58;
+  --theme-ui-colors-black70: #21313c;
+  --theme-ui-colors-black80: #061621;
+  --theme-ui-colors-black00: #ffffff;
+  --theme-ui-colors-blue05: #eefdfa;
+  --theme-ui-colors-blue10: #e3fcf7;
+  --theme-ui-colors-blue20: #a6ffec;
+  --theme-ui-colors-blue30: #53e9f6;
+  --theme-ui-colors-blue40: #00d2ff;
+  --theme-ui-colors-blue50: #009ffd;
+  --theme-ui-colors-blue60: #006cfa;
+  --theme-ui-colors-blue70: #0d427c;
+  --theme-ui-colors-blue80: #001e2b;
+  --theme-ui-colors-purple05: #fbf3ff;
+  --theme-ui-colors-purple10: #f9ebff;
+  --theme-ui-colors-purple20: #f2c5ee;
+  --theme-ui-colors-purple30: #d38ff0;
+  --theme-ui-colors-purple40: #b45af2;
+  --theme-ui-colors-purple50: #983ff9;
+  --theme-ui-colors-purple60: #7c25ff;
+  --theme-ui-colors-purple70: #5400f8;
+  --theme-ui-colors-purple80: #2a0f91;
+  --theme-ui-colors-green05: #f8ffea;
+  --theme-ui-colors-green10: #f4ffdc;
+  --theme-ui-colors-green20: #e9ff99;
+  --theme-ui-colors-green30: #b1ff05;
+  --theme-ui-colors-green40: #00ed64;
+  --theme-ui-colors-green50: #00aa57;
+  --theme-ui-colors-green60: #00684a;
+  --theme-ui-colors-green70: #014e3d;
+  --theme-ui-colors-green80: #023430;
+  --theme-ui-colors-yellow05: #fefae9;
+  --theme-ui-colors-yellow10: #fef7db;
+  --theme-ui-colors-yellow20: #ffec9e;
+  --theme-ui-colors-yellow30: #fbdb5a;
+  --theme-ui-colors-yellow40: #ffc010;
+  --theme-ui-colors-yellow50: #f28900;
+  --theme-ui-colors-yellow60: #944f01;
+  --theme-ui-colors-yellow70: #4c2100;
+  --theme-ui-colors-yellow80: #2f1400;
+  --theme-ui-colors-red05: #fff2ef;
+  --theme-ui-colors-red10: #ffeae5;
+  --theme-ui-colors-red20: #ffcdc7;
+  --theme-ui-colors-red30: #ff6960;
+
+  --dark-green: #42494f;
+  --dark-gray: #f5f6f7;
+
   --base00: #282c34;
   --base0A: #e5c07b;
   --base0B: #98c379;
   --base0C: #56b6c2;
   --base0D: #61afef;
+  --base0DD: #2a8cdb;
   --base0E: #c678dd;
   --base0F: #be5046;
   --base01: #353b45;
@@ -63,6 +120,9 @@ code {
   --transition2: all 0.7s linear;
   --transition-2: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
   --box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(149, 231, 144, 0.12);
+
+  --box-shadow-green: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 
   --box-shadow-active: 0 5px 5px -3px rgba(0, 0, 0, 0.2),

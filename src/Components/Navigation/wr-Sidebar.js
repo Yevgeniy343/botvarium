@@ -24,13 +24,14 @@ const Wrapper = styled.div`
     transform: scale(1);
   }
   .sidebar {
-    width: 90vw;
-    height: 95vh;
+    width: 100vw;
+    height: 80vh;
     max-width: var(--fixed-width);
     background: var(--clr-white);
     border-radius: var(--radius);
     box-shadow: var(--dark-shadow);
-    position: relative;
+    position: absolute;
+    top: 0;
     padding: 4rem 2rem;
   }
   .links-area {
@@ -72,7 +73,7 @@ const Wrapper = styled.div`
     margin-right: 1rem;
   }
 
-  @media (min-width: 720px) {
+  @media (min-width: 992px) {
     .sidebar-wrapper {
       display: none;
     }

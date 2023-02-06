@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  background: var(--clr-primary-9);
-
+  background: #ffffff;
   .burger {
     z-index: 3;
     position: sticky;
@@ -86,7 +85,7 @@ const Wrapper = styled.div`
     display: none;
   }
 
-  @media (min-width: 720px) {
+  @media (min-width: 768px) {
     .links-container {
       height: auto !important;
     }
