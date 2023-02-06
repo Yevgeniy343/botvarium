@@ -51,6 +51,8 @@ const Wrapper = styled.main`
     }
     :hover {
       box-shadow: var(--box-shadow-active);
+      transition: var(--transition);
+
       svg {
         color: var(--bs-blue);
       }

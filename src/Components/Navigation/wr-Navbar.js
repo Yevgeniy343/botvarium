@@ -54,7 +54,7 @@ const Wrapper = styled.div`
 
   .nav-toggle {
     font-size: 1.7rem;
-    color: var(--clr-primary-5);
+    color: var(--theme-ui-colors-green50);
     background: transparent;
     border-color: transparent;
     /* transition: var(--transition); */
@@ -124,12 +124,12 @@ const Wrapper = styled.div`
     }
     .social-icons svg {
       margin: 0 0.5rem;
-      color: var(--clr-primary-5);
+      color: var(--theme-ui-colors-green50);
       transition: var(--transition);
       font-size: 1.5rem;
       cursor: pointer;
       :hover {
-        color: var(--clr-primary-7);
+        color: var(--theme-ui-colors-green40);
       }
     }
     .logo {

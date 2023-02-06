@@ -5,10 +5,11 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 const WebApp = () => {
   const [text] = useTypewriter({
     words: [
-      "Веб-приложения можно разделить на несколько типов,в зависимости от разных сочетаний его основных составляющих ",
+      "Веб-приложения сейчас используются ежедневно, и уже являются обязательным атрибутом любой компании и бизнеса. Они делают любое общение с клиентом интерактивным и уведичивают монетизацию любого бизнесс-процесса многократно. ",
     ],
     loop: {},
-    typeSpeed: 100,
+    typeSpeed: 70,
+    deleteSpeed: 1,
   });
   return (
     <Wrapper>
@@ -16,6 +17,9 @@ const WebApp = () => {
         <div className="codeEditor">
           <span>{text}</span>
           {/* <Cursor cursorColor="b45af2" /> */}
+        </div>
+        <div className="actions">
+          <button className="btn">Узнать подробнее</button>
         </div>
         <div className="image">
           <img src={img} alt="web" />

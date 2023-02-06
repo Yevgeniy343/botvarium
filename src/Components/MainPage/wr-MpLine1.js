@@ -21,7 +21,7 @@ const Wrapper = styled.main`
     align-items: center;
     p {
       font-size: 1.3rem;
-      color: var(--clr-grey-3);
+      color: var(--theme-ui-colors-black60);
     }
   }
   @media (min-width: 768px) {
