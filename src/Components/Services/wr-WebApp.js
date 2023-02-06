@@ -9,8 +9,6 @@ const Wrapper = styled.div`
     grid-template-columns: 1fr;
   }
   .codeEditor {
-    /* position: absolute;
-    top: 300px; */
     width: 90%;
     height: 200px;
     background-color: var(--gridSubcardBackground);
@@ -18,7 +16,17 @@ const Wrapper = styled.div`
     padding: 1rem;
     border-radius: 10px;
     opacity: 0.8;
+    display: flex;
+    justify-content: start;
+    p {
+      margin-right: 0.5rem;
+    }
+    span {
+      font-weight: 700;
+      color: var(--theme-ui-colors-purple30);
+    }
   }
+
   @media (min-width: 768px) {
     .content {
       display: grid;
