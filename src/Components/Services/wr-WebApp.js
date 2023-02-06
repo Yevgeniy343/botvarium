@@ -2,13 +2,10 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   .image {
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
     display: none;
   }
   img {
-    width: 85%;
+    width: 100%;
   }
   .content {
     display: grid;
@@ -37,8 +34,8 @@ const Wrapper = styled.div`
     }
   }
   .actions {
-    position: absolute;
-    z-index: 2;
+    /* position: absolute; */
+
     align-self: end;
     justify-self: end;
     margin: 10px 25px;
@@ -50,12 +47,16 @@ const Wrapper = styled.div`
     background-color: transparent;
     cursor: pointer;
     color: var(--theme-ui-colors-purple20);
-
+    background-color: var(--theme-ui-colors-green40);
+    color: var(--theme-ui-colors-purple80);
     border: none;
     font-size: 1.2rem;
     transition: var(--transition);
+    color: var(--theme-ui-colors-yellow80);
+
+    border-radius: 10px;
     :hover {
-      color: var(--theme-ui-colors-purple30);
+      border-radius: 30px;
     }
   }
 
@@ -71,7 +72,7 @@ const Wrapper = styled.div`
       position: absolute;
       top: 300px;
       width: 380px;
-      height: 180px;
+      height: 220px;
       background-color: var(--gridSubcardBackground);
       color: var(--theme-ui-colors-black10);
       padding: 1rem;
@@ -79,21 +80,24 @@ const Wrapper = styled.div`
       opacity: 0.8;
     }
     .actions {
-      justify-self: center;
+      /* justify-self: center; */
     }
     .btn {
+      /* position: relative; */
       align-items: center;
+
       height: 35px;
       width: max-content;
       padding: 0.4rem 1.5rem;
-      background-color: var(--theme-ui-colors-green40);
-      color: var(--theme-ui-colors-purple80);
+
       font-size: 1.3rem;
       transition: var(--transition);
+      box-shadow: var(--box-shadow);
+
       :hover {
-        border: 1px solid var(--theme-ui-colors-yellow70);
+        /* border: 1px solid var(--theme-ui-colors-yellow70); */
         border-radius: 20px;
-        color: inherit;
+        color: var();
       }
     }
   }
