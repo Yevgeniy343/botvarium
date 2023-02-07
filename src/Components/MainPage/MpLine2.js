@@ -9,8 +9,11 @@ import Messenger from "../Services/Messendger";
 import Partners from "../Services/Partners";
 import LcClients from "../Services/LcClients";
 
+import { useLocation } from "react-router-dom";
+
 const MpLine2 = () => {
   const [value, setValue] = useState(0);
+  const location = useLocation();
 
   return (
     <Wrapper>
@@ -29,6 +32,7 @@ const MpLine2 = () => {
           <Messenger />
         )}
       </div>
+
       <div className="direction">
         <div
           className={value === 0 ? "direction-item active" : "direction-item"}

@@ -55,6 +55,7 @@ const Wrapper = styled.div`
   @media (min-width: 768px) {
     .image {
       display: block;
+      height: 450px;
     }
     .code-side {
       /* display: grid;
@@ -90,8 +91,9 @@ const Wrapper = styled.div`
 
   @media (min-width: 992px) {
     img {
-      width: 80%;
+      /* width: 80%; */
       float: right;
+      height: 450px;
     }
     .codeEditor {
       margin-top: 3rem;
