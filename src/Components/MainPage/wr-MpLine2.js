@@ -43,6 +43,7 @@ const Wrapper = styled.main`
     background-color: var(--clr-primary-11);
     border-radius: 20px;
     padding: 0.6rem 0.6rem;
+    opacity: 0.9;
     cursor: pointer;
     svg {
       display: none;

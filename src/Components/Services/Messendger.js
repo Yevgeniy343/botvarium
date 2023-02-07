@@ -25,7 +25,7 @@ const Messenger = () => {
         </div>
 
         <div className="image">
-          <img src={img} alt="web" style={{ width: "80%", float: "right" }} />
+          <img src={img} alt="web" />
         </div>
       </div>
     </Wrapper>
