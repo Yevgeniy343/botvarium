@@ -8,8 +8,9 @@ const Wrapper = styled.div`
     width: 100%;
   }
   .content {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .codeEditor {
     display: flex;
@@ -28,7 +29,7 @@ const Wrapper = styled.div`
     }
     span {
       text-indent: 1rem;
-      font-weight: 800;
+      font-weight: 700;
       color: var(--theme-ui-colors-green40);
       font-family: "Source Code Pro", monospace;
     }
@@ -37,7 +38,6 @@ const Wrapper = styled.div`
   .btn {
     height: 35px;
     margin: 1rem 0;
-    justify-self: center;
     width: max-content;
     padding: 0.5rem 1.5rem;
     background-color: var(--theme-ui-colors-green40);
@@ -73,16 +73,58 @@ const Wrapper = styled.div`
       color: var(--theme-ui-colors-black10);
       padding: 1rem;
       border-radius: 10px;
-      opacity: 0.8;
+      opacity: 0.7;
+      span {
+        text-indent: 1rem;
+        font-weight: 900;
+        color: var(--theme-ui-colors-green40);
+        font-family: "Source Code Pro", monospace;
+      }
     }
 
     .btn {
       position: relative;
       top: 250px;
-      left: 50%;
     }
   }
+
   @media (min-width: 992px) {
+    img {
+      width: 80%;
+      float: right;
+    }
+    .codeEditor {
+      margin-top: 3rem;
+      /* top: 350px; */
+      width: 350px;
+      height: 250px;
+    }
+    .btn {
+      margin-top: 4rem;
+    }
+  }
+  @media (min-width: 1140px) {
+    img {
+      width: 90%;
+      float: right;
+    }
+    .codeEditor {
+      margin-top: 5rem;
+    }
+    .btn {
+      top: 270px;
+    }
+  }
+  @media (min-width: 1400px) {
+    img {
+      width: 80%;
+      float: right;
+    }
+    .codeEditor {
+      width: 380px;
+    }
+    .btn {
+    }
   }
 `;
 

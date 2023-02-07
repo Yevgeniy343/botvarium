@@ -5,6 +5,9 @@ import Direction1 from "../MainPage/Directions/Direction1";
 import WebApp from "../Services/WebApp";
 import PwaApp from "../Services/PwaApp";
 import Portal from "../Services/Portal";
+import Messenger from "../Services/Messendger";
+import Partners from "../Services/Partners";
+import LcClients from "../Services/LcClients";
 
 const MpLine2 = () => {
   const [value, setValue] = useState(0);
@@ -17,13 +20,13 @@ const MpLine2 = () => {
         ) : value === 1 ? (
           <PwaApp />
         ) : value === 2 ? (
-          <div>2</div>
+          <LcClients />
         ) : value === 3 ? (
-          <div>3</div>
+          <Partners />
         ) : value === 4 ? (
           <Portal />
         ) : (
-          <div>5</div>
+          <Messenger />
         )}
       </div>
       <div className="direction">
