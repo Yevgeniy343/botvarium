@@ -12,6 +12,7 @@ const Wrapper = styled.div`
     grid-template-columns: 1fr;
   }
   .codeEditor {
+    display: flex;
     width: 90%;
     height: 200px;
     background-color: var(--gridSubcardBackground);
@@ -19,12 +20,11 @@ const Wrapper = styled.div`
     padding: 1rem;
     border-radius: 10px;
     opacity: 1;
-    display: flex;
     justify-content: start;
     box-shadow: var(--dark-shadow);
+    margin-right: 0.5rem;
 
     p {
-      margin-right: 0.5rem;
     }
     span {
       text-indent: 1rem;
@@ -33,28 +33,20 @@ const Wrapper = styled.div`
       font-family: "Source Code Pro", monospace;
     }
   }
-  .actions {
-    /* position: absolute; */
 
-    align-self: end;
-    justify-self: end;
-    margin: 10px 25px;
-  }
   .btn {
     height: 35px;
+    margin: 1rem 0;
+    justify-self: center;
     width: max-content;
     padding: 0.5rem 1.5rem;
-    background-color: transparent;
-    cursor: pointer;
-    color: var(--theme-ui-colors-purple20);
     background-color: var(--theme-ui-colors-green40);
-    color: var(--theme-ui-colors-purple80);
-    border: none;
     font-size: 1.2rem;
     transition: var(--transition);
     color: var(--theme-ui-colors-yellow80);
-
     border-radius: 10px;
+    border: none;
+    cursor: pointer;
     :hover {
       border-radius: 30px;
     }
@@ -63,6 +55,10 @@ const Wrapper = styled.div`
   @media (min-width: 768px) {
     .image {
       display: block;
+    }
+    .code-side {
+      /* display: grid;
+      grid-template-rows: 1fr 1fr; */
     }
     .content {
       display: grid;
@@ -79,26 +75,11 @@ const Wrapper = styled.div`
       border-radius: 10px;
       opacity: 0.8;
     }
-    .actions {
-      /* justify-self: center; */
-    }
+
     .btn {
-      /* position: relative; */
-      align-items: center;
-
-      height: 35px;
-      width: max-content;
-      padding: 0.4rem 1.5rem;
-
-      font-size: 1.3rem;
-      transition: var(--transition);
-      box-shadow: var(--box-shadow);
-
-      :hover {
-        /* border: 1px solid var(--theme-ui-colors-yellow70); */
-        border-radius: 20px;
-        color: var();
-      }
+      position: relative;
+      top: 250px;
+      left: 50%;
     }
   }
   @media (min-width: 992px) {

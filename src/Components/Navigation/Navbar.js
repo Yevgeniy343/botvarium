@@ -1,10 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Wrapper from "./wr-Navbar";
 import logo from "../../assets/imgs/logo.png";
 import { FaApple, FaGithub, FaNpm } from "react-icons/fa";
 import { BsXLg, BsDistributeVertical } from "react-icons/bs";
-import links from "../../Data/links-data";
 import sublinks from "../../Data/sub-links";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";

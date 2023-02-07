@@ -19,11 +19,11 @@ const WebApp = () => {
       <div className="content">
         <div className="codeEditor" ref={refCodeEditor}>
           <span>{text}</span>
-          {/* <Cursor cursorColor="b45af2" /> */}
         </div>
-        <div className="actions">
+        <div className="div">
           <button className="btn">Узнать подробнее</button>
         </div>
+
         <div className="image">
           <img src={img} alt="web" />
         </div>
