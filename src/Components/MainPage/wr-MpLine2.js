@@ -86,11 +86,14 @@ const Wrapper = styled.main`
     .left-block {
       height: 60vh;
     }
+    .direction {
+      height: 80%;
+    }
     .direction-item {
       min-width: max-content;
       width: 90%;
       height: max-content;
-      margin-right: 0 2rem;
+      margin: 0;
       padding: 1rem 1rem;
       border-radius: 10px;
       justify-content: start;
