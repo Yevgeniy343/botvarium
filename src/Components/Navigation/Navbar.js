@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import Wrapper from "./wr-Navbar";
-import logo from "../../assets/imgs/logo.png";
+import logo from "../../assets/imgs/botvarium-low-resolution-logo-color-on-transparent-background.png";
 import { FaApple, FaGithub, FaNpm } from "react-icons/fa";
 import { BsXLg, BsDistributeVertical } from "react-icons/bs";
 import sublinks from "../../Data/sub-links";

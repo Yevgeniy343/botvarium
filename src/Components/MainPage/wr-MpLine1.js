@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
 const Wrapper = styled.main`
+  circle,
+  rect,
+  line {
+    stroke-width: 5px;
+    stroke-linecap: round;
+    fill: transparent;
+  }
   margin: 0;
   padding: 4rem 0;
 
@@ -20,8 +27,9 @@ const Wrapper = styled.main`
     justify-content: center;
     align-items: center;
     p {
+      font-weight: 200;
       font-size: 1.3rem;
-      color: var(--theme-ui-colors-black60);
+      color: var(--theme-ui-colors-green60);
     }
   }
   @media (min-width: 768px) {

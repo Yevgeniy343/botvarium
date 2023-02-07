@@ -33,7 +33,8 @@ const Wrapper = styled.main`
     margin: 0 2rem;
   }
   .direction-item {
-    font-size: 0.9rem;
+    letter-spacing: 0.07rem;
+    font-size: 1rem;
     display: flex;
     width: max-content;
     justify-content: center;
@@ -47,7 +48,7 @@ const Wrapper = styled.main`
     cursor: pointer;
     svg {
       display: none;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       margin-right: 0.5rem;
     }
     :hover {
