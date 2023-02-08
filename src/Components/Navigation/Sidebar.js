@@ -1,6 +1,6 @@
 import Wrapper from "./wr-Sidebar";
 import sublinks from "../../Data/sub-links";
-import { menuToggleHandler } from "../../features/userSlice";
+import { closeSubmenu, menuToggleHandler } from "../../features/userSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { motion } from "framer-motion";
 import { BsXLg, BsDistributeVertical } from "react-icons/bs";
@@ -29,7 +29,10 @@ const Sidebar = () => {
                       const { url, icon, label } = link;
                       return (
                         <Link key={index} to={url}>
-                          <div className="link">
+                          <div
+                            className="link"
+                            onClick={() => dispatch(menuToggleHandler())}
+                          >
                             <div className="icon">{icon}</div>
                             <div className="label">
                               <p>{label}</p>
