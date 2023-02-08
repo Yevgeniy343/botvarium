@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  p {
+    font-family: "Source Code Pro", monospace;
+  }
   .submenu {
     background: var(--clr-white);
     box-shadow: var(--dark-shadow);

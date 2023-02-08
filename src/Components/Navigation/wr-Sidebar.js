@@ -17,6 +17,7 @@ const Wrapper = styled.div`
     transition: var(--transition2);
     transform: scale(0);
     background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
   }
   .sidebar-wrapper.show {
     visibility: visible;

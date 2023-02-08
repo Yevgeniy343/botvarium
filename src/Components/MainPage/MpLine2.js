@@ -44,15 +44,6 @@ const MpLine2 = () => {
           <p>веб-приложения</p>
         </div>
         <div
-          className={value === 1 ? "direction-item active" : "direction-item"}
-          onClick={() => setValue(1)}
-        >
-          <div className="icon">
-            <VscCode />
-          </div>
-          <p>PWA-приложения</p>
-        </div>
-        <div
           className={value === 2 ? "direction-item active" : "direction-item"}
           onClick={() => setValue(2)}
         >
@@ -61,6 +52,16 @@ const MpLine2 = () => {
           </div>
           <p>ЛК клиентов</p>
         </div>
+        <div
+          className={value === 1 ? "direction-item active" : "direction-item"}
+          onClick={() => setValue(1)}
+        >
+          <div className="icon">
+            <VscCode />
+          </div>
+          <p>PWA-приложения</p>
+        </div>
+
         <div
           className={value === 3 ? "direction-item active" : "direction-item"}
           onClick={() => setValue(3)}

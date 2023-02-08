@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  p {
+    font-family: "Source Code Pro", monospace;
+  }
   background: #ffffff;
   .burger {
     z-index: 3;
@@ -116,6 +119,7 @@ const Wrapper = styled.div`
     .links {
       display: flex;
       flex-direction: row;
+      font-family: "Source Code Pro", monospace;
     }
     .social-icons {
       display: flex;
