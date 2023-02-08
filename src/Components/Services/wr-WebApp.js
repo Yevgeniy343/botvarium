@@ -107,7 +107,7 @@ const Wrapper = styled.div`
   }
   @media (min-width: 1140px) {
     img {
-      height: 450px;
+      height: 400px;
     }
     .codeEditor {
       margin-top: 5rem;

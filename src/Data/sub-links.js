@@ -4,7 +4,7 @@ const sublinks = [
   {
     page: "Услуги",
     links: [
-      { label: "Веб-приложения", icon: <FaBattleNet />, url: "/" },
+      { label: "Веб-приложения", icon: <FaBattleNet />, url: "/web-app" },
       { label: "ЛК клиентов", icon: <FaBattleNet />, url: "/" },
       { label: "ЛК партнеров", icon: <FaBattleNet />, url: "/" },
       { label: "Корпоративный портал", icon: <FaBattleNet />, url: "/" },
