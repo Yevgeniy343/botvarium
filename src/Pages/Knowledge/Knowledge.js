@@ -5,6 +5,8 @@ import { useRef, useState, useMemo, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Text, TrackballControls } from "@react-three/drei";
 import { useNavigate } from "react-router-dom";
+import Sidebar from "../../Components/Navigation/Sidebar";
+import SubMenu from "../../Components/Navigation/SubMenu";
 
 // import randomWord from "random-words";
 
@@ -95,6 +97,8 @@ const Knowledge = () => {
   return (
     <Wrapper ref={refWindow}>
       <Navbar />
+      <Sidebar />
+      <SubMenu />
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }}>
         <fog attach="fog" args={["#202025", 0, 90]} />
         <Cloud count={8} radius={20} />
