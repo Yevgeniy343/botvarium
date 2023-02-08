@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   .header {
     font-family: "Source Code Pro", monospace;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 3rem;
     p {
       color: var(--theme-ui-colors-purple50);
@@ -32,6 +32,7 @@ const Wrapper = styled.div`
   }
 
   .about {
+    display: none;
     font-size: 1.2rem;
     margin: 2rem;
     p {
@@ -61,6 +62,12 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 768px) {
+    .header {
+      font-size: 4rem;
+    }
+    .about {
+      display: block;
+    }
     .content {
       height: 450px;
       display: flex;
@@ -79,17 +86,23 @@ const Wrapper = styled.div`
       box-shadow: var(--box-shadow2);
       border-radius: 10px;
       padding: 1rem;
+      min-height: 100px;
     }
     .right {
       border: 2px solid var(--theme-ui-colors-purple50);
       box-shadow: var(--box-shadow2);
+      margin: 0;
       margin-left: 1rem;
       border-radius: 10px;
       padding: 1rem;
+      min-height: 100px;
     }
   }
 
   @media (min-width: 992px) {
+    .header {
+      font-size: 5rem;
+    }
   }
   @media (min-width: 1140px) {
   }

@@ -83,7 +83,12 @@ const WebAppPage = () => {
       <Sidebar />
       <SubMenu />
 
-      <Parallax bgImage={image1} strength={450} blur={{ min: -1, max: 3 }}>
+      <Parallax
+        className="huge-parallax"
+        bgImage={image1}
+        strength={450}
+        blur={{ min: -1, max: 3 }}
+      >
         <div
           className="content"
           onMouseOver={() => {
