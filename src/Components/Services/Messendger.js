@@ -2,6 +2,20 @@ import Wrapper from "./wr-WebApp";
 import img from "../../assets/imgs/undraw_Chatting_re_j55r.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useRef, useEffect } from "react";
+import { motion } from "framer-motion";
+
+const pathVariants = {
+  hidden: {
+    opacity: 0.5,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+    },
+  },
+};
 
 const Messenger = () => {
   const refCodeEditor = useRef();
@@ -16,7 +30,12 @@ const Messenger = () => {
   });
   return (
     <Wrapper>
-      <div className="content">
+      <motion.div
+        className="content"
+        initial="hidden"
+        animate="visible"
+        variants={pathVariants}
+      >
         <div className="codeEditor" ref={refCodeEditor}>
           <span>{text}</span>
         </div>
@@ -27,7 +46,7 @@ const Messenger = () => {
         <div className="image">
           <img src={img} alt="web" />
         </div>
-      </div>
+      </motion.div>
     </Wrapper>
   );
 };

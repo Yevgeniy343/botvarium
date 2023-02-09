@@ -117,7 +117,7 @@ const WebAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>преимущества pwa-приложения</span>
+          <span>преимущества pwa-приложения над web-приложением</span>
         </motion.div>
         <motion.div
           className="right"
@@ -141,7 +141,7 @@ const WebAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>преимущества PWA</span>
+          <span>еще немного о преимуществах PWA</span>
         </motion.div>
         <motion.div
           className="right"
@@ -150,9 +150,17 @@ const WebAppPage = () => {
           animate="visible"
         >
           <p>
-            Разделение в веб-приложениях backend и frontend - одно из
-            стандартных решений арзитектура построения приложения. Как правило,
-            бэкенд реализует функции, используемые фронтендом.
+            - обновления добавляются разработчиками удалённо. Пользователи видят
+            изменения и улучшения, но им не требуется скачивать эти обновления
+            самостоятельно;
+          </p>
+          <p>
+            - PWA можно установить без «Google play» и App Store, а также
+            вопреки запрету устанавливать приложения из неизвестных источников;
+          </p>
+          <p>
+            - PWA можно добавлять в App Store и Google Play, давая пользователю
+            возможность скачать приложение из привычного источника
           </p>
         </motion.div>
       </div>
@@ -163,7 +171,7 @@ const WebAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>frontend + backend с привязкой к базе данных</span>
+          <span>думаю ...</span>
         </motion.div>
         <motion.div
           className="right"
@@ -171,12 +179,7 @@ const WebAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <p>
-            Более сложные web-приложения используют базы данных, которые
-            позволяют хранить в зашифрованном виде данные пользователей,
-            вносимую пользователями информацию и дополнительные двнные, делающие
-            веб-приложение более умным и адаативным.
-          </p>
+          <p>описание</p>
         </motion.div>
       </div>
       <div className="line">

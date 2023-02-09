@@ -2,6 +2,20 @@ import Wrapper from "./wr-WebApp";
 import img from "../../assets/imgs/undraw_Group_chat_re_frmo.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useRef, useEffect } from "react";
+import { motion } from "framer-motion";
+
+const pathVariants = {
+  hidden: {
+    opacity: 0.5,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+    },
+  },
+};
 
 const Portal = () => {
   const refCodeEditor = useRef();
@@ -16,7 +30,12 @@ const Portal = () => {
   });
   return (
     <Wrapper>
-      <div className="content">
+      <motion.div
+        className="content"
+        initial="hidden"
+        animate="visible"
+        variants={pathVariants}
+      >
         <div className="codeEditor" ref={refCodeEditor}>
           <span>{text}</span>
         </div>
@@ -27,7 +46,7 @@ const Portal = () => {
         <div className="image">
           <img src={img} alt="web" />
         </div>
-      </div>
+      </motion.div>
     </Wrapper>
   );
 };
