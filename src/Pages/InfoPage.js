@@ -2,6 +2,11 @@ import Navbar from "../Components/Navigation/Navbar";
 import Sidebar from "../Components/Navigation/Sidebar";
 import SubMenu from "../Components/Navigation/SubMenu";
 import { motion } from "framer-motion";
+import styled, { keyframes } from "styled-components";
+import Svg1 from "../svg/Svg_1";
+import Svg2 from "../svg/Svg_2";
+import { useState } from "react";
+import { animated, useSpring, Controller } from "@react-spring/web";
 
 const pathVariants = {
   hidden: {
@@ -19,34 +24,50 @@ const pathVariants = {
 };
 
 const InfoPage = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const props = useSpring({
+    from: { opacity: 0, y: 200 },
+    to: {
+      opacity: 1,
+      y: 0,
+      delay: 2000,
+    },
+    config: { duration: 5000 },
+    onStart: () => console.log("the spring has started"),
+  });
+
+  const animations = new Controller({ opacity: toggle ? 1 : 0 });
+
   return (
-    <div>
+    <Wrapper>
       <Navbar />
       <Sidebar />
       <SubMenu />
-      <div>
-        <motion.svg viewBox="0 0 600 840" initial="hidden" animate="visible">
-          <motion.path
-            initial="hidden"
-            animate="visible"
-            variants={pathVariants}
-            d="M75,462.52c-2.93-20.55-5.38-41.17-7.36-61.84c-1.89-19.76-3.89-39.7-3.37-59.58c0.49-18.6,3.72-37.09,11.98-53.89
-			c7.2-14.63,17.41-27.53,29.2-38.73c11.86-11.26,25.27-20.79,39.43-28.94c16.32-9.39,33.68-17.14,51.98-21.77
-			c33.07-8.36,70.31-5.27,98.06,16.08c28.9,22.22,37.27,60,39.99,94.48c3.18,40.23-1.51,80.53-7.15,120.32
-			c-5.53,38.96-12.48,78.13-13.34,117.56c-0.38,17.29,0.82,35.04,6.51,51.49c5.3,15.35,14.6,28.77,27.4,38.79
-			c12.27,9.61,26.89,16,42.07,19.34c7.72,1.7,15.64,2.65,23.55,2.82c9.23,0.2,18.6-0.79,27.77,0.66
-			c36.85,5.8,38.48,50.3,47.57,78.34c2.56,7.9,5.95,15.53,10.85,22.28c1.87,2.58,6.21,0.09,4.32-2.52
-			c-19.81-27.31-12.97-66.87-38.13-91.33c-5.78-5.62-12.94-9.49-20.84-11.13c-9.13-1.91-18.49-1.29-27.75-1.25
-			c-16.33,0.06-32.76-2.99-47.65-9.82c-14.54-6.66-27.56-16.86-36.18-30.46c-9.64-15.2-13.34-33.21-14.28-50.98
-			c-1-19.09,0.72-38.33,2.76-57.3c2.21-20.61,5.26-41.12,8.24-61.63c5.85-40.27,11.59-80.88,10.06-121.69
-			c-1.32-35.17-6.82-74.61-31.52-101.65c-22.86-25.03-58.71-34.52-91.66-31.13c-36.15,3.72-71.26,20.67-99.9,42.59
-			c-26.69,20.43-48.48,47.73-55.31,81.26c-3.94,19.33-3.49,39.21-2.11,58.79c1.46,20.79,3.55,41.54,6.04,62.23
-			c1.21,9.99,2.53,19.97,3.95,29.94C70.64,467.02,75.45,465.67,75,462.52L75,462.52z"
-          />
-        </motion.svg>
+      <div className="line">
+        <Svg1 />
+        <animated.div style={animations.spting}>
+          <Svg2 />
+        </animated.div>
       </div>
-    </div>
+      <div className="animate">
+        <button onClick={() => setToggle(!toggle)}>animate</button>
+      </div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  button {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .animate {
+    position: absolute;
+    left: 200px;
+  }
+  .line {
+  }
+`;
 
 export default InfoPage;
