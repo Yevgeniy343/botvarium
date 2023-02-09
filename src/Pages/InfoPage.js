@@ -25,14 +25,10 @@ const InfoPage = () => {
       <Sidebar />
       <SubMenu />
       <div>
-        <motion.svg
-          x="0px"
-          y="0px"
-          viewBox="0 0 600 840"
-          initial="hidden"
-          animate="visible"
-        >
+        <motion.svg viewBox="0 0 600 840" initial="hidden" animate="visible">
           <motion.path
+            initial="hidden"
+            animate="visible"
             variants={pathVariants}
             d="M75,462.52c-2.93-20.55-5.38-41.17-7.36-61.84c-1.89-19.76-3.89-39.7-3.37-59.58c0.49-18.6,3.72-37.09,11.98-53.89
 			c7.2-14.63,17.41-27.53,29.2-38.73c11.86-11.26,25.27-20.79,39.43-28.94c16.32-9.39,33.68-17.14,51.98-21.77

@@ -58,6 +58,13 @@ const Wrapper = styled.div`
     margin: 0.5rem 0.5rem;
     padding: 0.6rem 0.6rem;
     cursor: pointer;
+    box-shadow: var(--dark-shadow);
+    :hover {
+      transition: var(--transition);
+      padding-left: 0.2rem;
+      background-color: var(--theme-ui-colors-black15);
+      box-shadow: none;
+    }
     svg {
       font-size: 1.2rem;
       margin-right: 0.5rem;

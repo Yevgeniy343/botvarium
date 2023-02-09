@@ -4,12 +4,12 @@ const sublinks = [
   {
     page: "Услуги",
     links: [
-      { label: "Веб-приложения", icon: <FaBattleNet />, url: "/web-app" },
+      { label: "Web-приложение", url: "/web-app" },
+      { label: "Pwa-приложение", url: "/pwa-app" },
       // { label: "ЛК клиентов", icon: <FaBattleNet />, url: "/" },
       // { label: "ЛК партнеров", icon: <FaBattleNet />, url: "/" },
       // { label: "Корпоративный портал", icon: <FaBattleNet />, url: "/" },
       // { label: "Мессенджеры", icon: <FaBattleNet />, url: "/" },
-      // { label: "PWA-приложения", icon: <FaBattleNet />, url: "/" },
     ],
   },
   {
@@ -18,7 +18,7 @@ const sublinks = [
       // { label: "Веб разработка", icon: <FaBattleNet />, url: "/" },
       // { label: "Личные кабинеты", icon: <FaBattleNet />, url: "/" },
       // { label: "Технологии", icon: <FaBattleNet />, url: "/" },
-      { label: "Галактика", icon: <FaBattleNet />, url: "/knowledge" },
+      { label: "Галактика", url: "/knowledge" },
     ],
   },
   // {

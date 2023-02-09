@@ -1,13 +1,10 @@
 import Wrapper from "./wr-Submenu";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useRef, useState } from "react";
-import sublinks from "../../Data/sub-links";
 import { Link } from "react-router-dom";
-import { currentPageHandler } from "../../features/userSlice";
-import links from "../../Data/links-data";
 
 const SubMenu = () => {
-  const { isSubmenu, subMenuLocation, currentPage, currentLinks } = useSelector(
+  const { isSubmenu, subMenuLocation, currentLinks } = useSelector(
     (store) => store.user
   );
   const dispatch = useDispatch();
@@ -33,11 +30,11 @@ const SubMenu = () => {
         <hr />
         <div className={`submenu-center ${columns}`}>
           {currentLinks.map((link, index) => {
-            const { url, icon, label } = link;
+            const { url, label } = link;
             return (
               <div className="sub">
                 <Link key={index} to={url}>
-                  <div className="icon">{icon}</div>
+                  {/* <div className="icon">{icon}</div> */}
                   <div className="label">{label}</div>
                 </Link>
               </div>
