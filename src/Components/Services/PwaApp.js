@@ -3,6 +3,7 @@ import img from "../../assets/imgs/undraw_progressive_app_m9ms.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const pathVariants = {
   hidden: {
@@ -18,6 +19,7 @@ const pathVariants = {
 };
 const PwaApp = () => {
   const refCodeEditor = useRef();
+  const navigate = useNavigate();
 
   const [text] = useTypewriter({
     words: [
@@ -39,7 +41,9 @@ const PwaApp = () => {
           <span>{text}</span>
         </div>
         <div className="div">
-          <button className="btn">Узнать подробнее</button>
+          <button className="btn" onClick={() => navigate("/pwa-app")}>
+            Узнать подробнее
+          </button>
         </div>
 
         <div className="image">

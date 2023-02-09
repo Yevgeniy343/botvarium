@@ -27,7 +27,6 @@ const Wrapper = styled.div`
     width: 0;
     height: 0;
     border: 1px solid var(--base0E);
-
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 5px solid var(--clr-white);
@@ -51,7 +50,11 @@ const Wrapper = styled.div`
   }
   .submenu h4 {
     margin-bottom: 1.5rem;
+    color: var(--theme-ui-colors-green60);
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.3rem;
   }
+
   .submenu-center a {
     width: 10rem;
     display: block;

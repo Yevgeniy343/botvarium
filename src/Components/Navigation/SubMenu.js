@@ -1,5 +1,5 @@
 import Wrapper from "./wr-Submenu";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -7,7 +7,6 @@ const SubMenu = () => {
   const { isSubmenu, subMenuLocation, currentLinks } = useSelector(
     (store) => store.user
   );
-  const dispatch = useDispatch();
   const container = useRef(null);
   const [columns, setColumns] = useState("col-2");
 

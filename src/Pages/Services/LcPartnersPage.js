@@ -72,7 +72,7 @@ const rightVariants4 = {
   },
 };
 
-const LcClientsPage = () => {
+const LcPartnersPage = () => {
   const dispatch = useDispatch();
 
   const image1 =
@@ -96,7 +96,7 @@ const LcClientsPage = () => {
           }}
         >
           <div className="header">
-            <p>Личный кабинет клиентов</p>
+            <p>Личный кабинет партнеров</p>
           </div>
           <div className="about">
             <p>
@@ -208,4 +208,4 @@ const LcClientsPage = () => {
   );
 };
 
-export default LcClientsPage;
+export default LcPartnersPage;

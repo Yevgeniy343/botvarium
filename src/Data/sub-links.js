@@ -7,9 +7,9 @@ const sublinks = [
       { label: "Web-приложение", url: "/web-app" },
       { label: "Pwa-приложение", url: "/pwa-app" },
       { label: "ЛК клиентов", url: "/clients-pa" },
-      // { label: "ЛК партнеров", icon: <FaBattleNet />, url: "/" },
-      // { label: "Корпоративный портал", icon: <FaBattleNet />, url: "/" },
-      // { label: "Мессенджеры", icon: <FaBattleNet />, url: "/" },
+      { label: "ЛК партнеров", url: "/partners-pa" },
+      { label: "Корпоративный портал", url: "/portal" },
+      { label: "Мессенджер", url: "/messenger" },
     ],
   },
   {

@@ -7,6 +7,9 @@ import Knowledge from "./Pages/Knowledge/Knowledge";
 import WebAppPage from "./Pages/Services/WebAppPage";
 import PwaAppPage from "./Pages/Services/PwaAppPage";
 import LcClientsPage from "./Pages/Services/LcClientsPage";
+import LcPartnersPage from "./Pages/Services/LcPartnersPage";
+import PortalPage from "./Pages/Services/PortalPage";
+import MessengerPage from "./Pages/Services/MessengerPage";
 import {
   RouterProvider,
   createBrowserRouter,
@@ -24,6 +27,9 @@ const router = createBrowserRouter([
   { path: "/web-app", element: <WebAppPage /> },
   { path: "/pwa-app", element: <PwaAppPage /> },
   { path: "/clients-pa", element: <LcClientsPage /> },
+  { path: "/partners-pa", element: <LcPartnersPage /> },
+  { path: "/portal", element: <PortalPage /> },
+  { path: "/messenger", element: <MessengerPage /> },
 ]);
 
 function App() {

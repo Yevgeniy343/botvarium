@@ -54,8 +54,6 @@ const Wrapper = styled.div`
     padding: 0 1rem;
     cursor: pointer;
     :hover {
-      border: 2px solid var(--theme-ui-colors-green60);
-
       box-shadow: var(--dark-shadow);
     }
     :active {

@@ -3,6 +3,7 @@ import img from "../../assets/imgs/undraw_Chatting_re_j55r.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const pathVariants = {
   hidden: {
@@ -19,6 +20,7 @@ const pathVariants = {
 
 const Messenger = () => {
   const refCodeEditor = useRef();
+  const navigate = useNavigate();
 
   const [text] = useTypewriter({
     words: [
@@ -40,7 +42,9 @@ const Messenger = () => {
           <span>{text}</span>
         </div>
         <div className="div">
-          <button className="btn">Узнать подробнее</button>
+          <button className="btn" onClick={() => navigate("/messenger")}>
+            Узнать подробнее
+          </button>
         </div>
 
         <div className="image">

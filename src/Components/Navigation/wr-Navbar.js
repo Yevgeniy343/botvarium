@@ -14,11 +14,14 @@ const Wrapper = styled.div`
     background: transparent;
     border-color: transparent;
     font-size: 1.1rem;
-    /* color: white; */
     text-transform: capitalize;
     letter-spacing: 1px;
     width: 7rem;
     cursor: pointer;
+    :hover {
+      transition: var(--transition);
+      color: var(--theme-ui-colors-purple50);
+    }
   }
   a {
     font-weight: 700;
@@ -32,7 +35,7 @@ const Wrapper = styled.div`
     transition: var(--transition);
     :hover {
       background: var(--clr-primary-8);
-      color: var(--clr-primary-5);
+      color: var(--theme-ui-colors-purple50);
       padding-left: 1.5rem;
     }
   }
