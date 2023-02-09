@@ -10,6 +10,12 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   const { menuToggle } = useSelector((store) => store.user);
   const dispatch = useDispatch();
+  const menuHandler = () => {
+    setTimeout(() => {
+      dispatch(menuToggleHandler());
+    }, 0);
+  };
+
   return (
     <Wrapper>
       <aside
@@ -29,10 +35,7 @@ const Sidebar = () => {
                       const { url, icon, label } = link;
                       return (
                         <Link key={index} to={url}>
-                          <div
-                            className="link"
-                            onClick={() => dispatch(menuToggleHandler())}
-                          >
+                          <div className="link" onClick={menuHandler}>
                             <div className="icon">{icon}</div>
                             <div className="label">
                               <p>{label}</p>

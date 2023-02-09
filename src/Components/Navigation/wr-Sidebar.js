@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   }
   .sidebar {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     max-width: var(--fixed-width);
     background: var(--clr-white);
     border-radius: var(--radius);
@@ -40,14 +40,16 @@ const Wrapper = styled.div`
   }
   .page {
     font-size: 1.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .sidebar-links {
   }
   .sidebar-sublinks {
+    width: max-content;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 0.25rem;
+    justify-content: space-around;
+    grid-template-columns: 1fr;
+    /* row-gap: 0.5rem; */
   }
 
   .link {
