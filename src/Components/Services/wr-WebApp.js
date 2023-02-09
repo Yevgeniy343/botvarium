@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  p {
+    font-family: "Source Code Pro", monospace;
+  }
   .image {
     display: none;
   }
@@ -39,16 +42,24 @@ const Wrapper = styled.div`
     height: 35px;
     margin: 1rem 0;
     width: max-content;
-    padding: 0.5rem 1.5rem;
-    background-color: var(--theme-ui-colors-green40);
+    /* padding: 0.5rem 1.5rem; */
+    /* background-color: var(--theme-ui-colors-green40); */
     font-size: 1.2rem;
     transition: var(--transition);
     color: var(--theme-ui-colors-yellow80);
-    border-radius: 10px;
-    border: none;
+    border-radius: 20px;
+    border: 1px solid var(--theme-ui-colors-green60);
+    font-family: "Source Code Pro", monospace;
+    font-weight: 900;
+    padding: 0 1rem;
     cursor: pointer;
     :hover {
-      border-radius: 30px;
+      border: 2px solid var(--theme-ui-colors-green60);
+
+      box-shadow: var(--dark-shadow);
+    }
+    :active {
+      box-shadow: none;
     }
   }
 

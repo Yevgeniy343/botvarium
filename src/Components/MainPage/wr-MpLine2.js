@@ -30,7 +30,7 @@ const Wrapper = styled.main`
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    margin: 0 2rem;
+    margin: 0 0.5rem;
   }
   .direction-item {
     letter-spacing: 0.07rem;

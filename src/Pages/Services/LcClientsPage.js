@@ -72,7 +72,7 @@ const rightVariants4 = {
   },
 };
 
-const PwaAppPage = () => {
+const WebAppPage = () => {
   const dispatch = useDispatch();
 
   const image1 =
@@ -96,15 +96,14 @@ const PwaAppPage = () => {
           }}
         >
           <div className="header">
-            <p>Pwa-приложение</p>
+            <p>Личный кабинет клиентов</p>
           </div>
           <div className="about">
             <p>
-              Прогрессивное web-приложение ( progressive web app, PWA) —
-              технология в web-разработке, которая визуально и функционально
-              трансформирует сайт в приложение. PWA является гибридным решением
-              и позволяет открыть приложение с помощью мобильного браузера. При
-              этом полностью сохраняется функциональность нативного приложения.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              doloribus, totam explicabo ratione laboriosam assumenda facere
+              quidem quod excepturi nulla! A nihil cupiditate similique sint
+              quidem dolore corporis facilis illum!
             </p>
           </div>
         </div>
@@ -117,7 +116,7 @@ const PwaAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>преимущества pwa-приложения над web-приложением</span>
+          <span>idea 1</span>
         </motion.div>
         <motion.div
           className="right"
@@ -125,12 +124,11 @@ const PwaAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <p>- работа в режиме офлайн;</p>
-          <p>- отправка push-уведомлений;</p>
-          <p>- доступ к аппаратному обеспечению устройства;</p>
           <p>
-            - установка иконки на рабочий стол мобильного устройства, визуально
-            не отличающегося от иконки нативного приложения;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+            perferendis facilis, molestiae qui animi consequatur ipsa ad modi
+            neque. Obcaecati quae nisi eos vitae nulla explicabo beatae amet
+            omnis officia?
           </p>
         </motion.div>
       </div>
@@ -141,7 +139,7 @@ const PwaAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>еще немного о преимуществах PWA</span>
+          <span>idea 2</span>
         </motion.div>
         <motion.div
           className="right"
@@ -150,17 +148,10 @@ const PwaAppPage = () => {
           animate="visible"
         >
           <p>
-            - обновления добавляются разработчиками удалённо. Пользователи видят
-            изменения и улучшения, но им не требуется скачивать эти обновления
-            самостоятельно;
-          </p>
-          <p>
-            - PWA можно установить без «Google play» и App Store, а также
-            вопреки запрету устанавливать приложения из неизвестных источников;
-          </p>
-          <p>
-            - PWA можно добавлять в App Store и Google Play, давая пользователю
-            возможность скачать приложение из привычного источника
+            Далеко-далеко за словесными горами, в стране гласных и согласных
+            живут рыбные тексты. Но, инициал алфавит парадигматическая себя
+            лучше наш если? Единственное силуэт встретил lorem собрал
+            пунктуация, оксмокс лучше текстов запятых свой предложения.
           </p>
         </motion.div>
       </div>
@@ -171,7 +162,7 @@ const PwaAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>думаю ...</span>
+          <span>idea 3.</span>
         </motion.div>
         <motion.div
           className="right"
@@ -179,7 +170,12 @@ const PwaAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <p>описание</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+            architecto perferendis nostrum ab sed cum laudantium voluptates
+            obcaecati iusto, aliquam provident dolore aliquid nesciunt voluptas
+            magnam eveniet eligendi corporis recusandae.
+          </p>
         </motion.div>
       </div>
       <div className="line">
@@ -189,7 +185,7 @@ const PwaAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>Этапы разраблтки и стоимость</span>
+          <span>idea 4</span>
         </motion.div>
         <motion.div
           className="right"
@@ -197,7 +193,12 @@ const PwaAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          описание
+          <p>
+            Mujer uno dolor más de, poder mismo si. Entero arquitecto columna
+            corrupto patrón culpa conejo, alma tenedor magma sintió permacultura
+            laboriosamente, rayo reincidente. Cerro corporal alveolar fantasía
+            letra ventana? Deleznable?
+          </p>
         </motion.div>
       </div>
       <div className="content"></div>
@@ -207,4 +208,4 @@ const PwaAppPage = () => {
   );
 };
 
-export default PwaAppPage;
+export default WebAppPage;

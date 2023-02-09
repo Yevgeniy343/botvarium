@@ -38,7 +38,7 @@ const Clients = () => {
         <div className="codeEditor" ref={refCodeEditor}>
           <span>{text}</span>
         </div>
-        <div className="div">
+        <div>
           <button className="btn">Узнать подробнее</button>
         </div>
 
