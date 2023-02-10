@@ -4,6 +4,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import SvgPwa from "../../svg/SvgPwa";
 
 const pathVariants = {
   hidden: {
@@ -47,7 +48,8 @@ const PwaApp = () => {
         </div>
 
         <div className="image">
-          <img src={img} alt="web" />
+          {/* <img src={img} alt="web" /> */}
+          <SvgPwa />
         </div>
       </motion.div>
     </Wrapper>

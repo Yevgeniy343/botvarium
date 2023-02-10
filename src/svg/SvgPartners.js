@@ -2,19 +2,18 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const variants1 = {
-  hidden: { y: 200, opacity: 0 },
+  hidden: { y: 200, opacity: 1 },
   visible: {
     y: 0,
-    opacity: 1,
+    opacity: 0.5,
     transition: { duration: 3, repeat: Infinity },
   },
 };
 const variants2 = {
-  hidden: { y: 0, opacity: 1 },
+  hidden: { opacity: 0 },
   visible: {
-    y: -300,
-    opacity: 0,
-    transition: { duration: 3.7, delay: 0.7, repeat: Infinity },
+    opacity: 1,
+    transition: { duration: 3, repeat: Infinity },
   },
 };
 
@@ -92,12 +91,15 @@ function Icon() {
             data-name="Rectangle 252"
           ></path>
         </g>
-        <path
+        <motion.path
+          variants={variants2}
+          initial="hidden"
+          animate="visible"
           fill="#00aa57"
           d="M383.606 469.293a53.91 53.91 0 01-8.813 29.627 52.688 52.688 0 01-3.965 5.325 54.427 54.427 0 01-11.617 10.322q-1.773 1.175-3.645 2.2a53.739 53.739 0 01-21.057 6.485 52.65 52.65 0 01-5.11.242 53.985 53.985 0 01-13.989-1.829 51.938 51.938 0 01-7.567-2.627q-1.879-.812-3.673-1.765a53.393 53.393 0 01-8.165-5.289q-1.783-1.388-3.438-2.926a54.2 54.2 0 1191.04-39.764z"
           data-name="Path 952"
           transform="translate(-186.66 -163.024)"
-        ></path>
+        ></motion.path>
         <g fill="#fff" data-name="Group 32">
           <path
             d="M139.42 280.966H146.065V331.558H139.42z"
