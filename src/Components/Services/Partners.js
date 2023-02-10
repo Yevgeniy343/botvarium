@@ -4,6 +4,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import SvgPartners from "../../svg/SvgPartners";
 
 const pathVariants = {
   hidden: {
@@ -48,7 +49,8 @@ const Partners = () => {
         </div>
 
         <div className="image">
-          <img src={img} alt="web" />
+          {/* <img src={img} alt="web" /> */}
+          <SvgPartners />
         </div>
       </motion.div>
     </Wrapper>

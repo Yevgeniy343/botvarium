@@ -4,6 +4,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import SvgPortal from "../../svg/SvgPortal";
 
 const pathVariants = {
   hidden: {
@@ -48,7 +49,8 @@ const Portal = () => {
         </div>
 
         <div className="image">
-          <img src={img} alt="web" />
+          <SvgPortal />
+          {/* <img src={img} alt="web" /> */}
         </div>
       </motion.div>
     </Wrapper>

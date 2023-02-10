@@ -6,10 +6,13 @@ const Wrapper = styled.div`
   }
   .image {
     display: none;
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; */
   }
-  img {
+  /* img {
     width: 100%;
-  }
+  } */
   .content {
     display: flex;
     flex-direction: column;

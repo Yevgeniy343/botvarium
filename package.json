@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-spring/web": "^9.6.1",
     "@react-three/drei": "^9.56.12",
     "@react-three/fiber": "^8.10.1",
     "@reduxjs/toolkit": "^1.9.2",

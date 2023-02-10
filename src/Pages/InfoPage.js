@@ -2,11 +2,12 @@ import Navbar from "../Components/Navigation/Navbar";
 import Sidebar from "../Components/Navigation/Sidebar";
 import SubMenu from "../Components/Navigation/SubMenu";
 import { motion } from "framer-motion";
-import styled, { keyframes } from "styled-components";
+
 import Svg1 from "../svg/Svg_1";
 import Svg2 from "../svg/Svg_2";
 import { useState } from "react";
-import { animated, useSpring, Controller } from "@react-spring/web";
+import SvgMessenger from "../svg/SvgMessenger";
+import styled from "styled-components";
 
 const pathVariants = {
   hidden: {
@@ -26,48 +27,27 @@ const pathVariants = {
 const InfoPage = () => {
   const [toggle, setToggle] = useState(false);
 
-  const props = useSpring({
-    from: { opacity: 0, y: 200 },
-    to: {
-      opacity: 1,
-      y: 0,
-      delay: 2000,
-    },
-    config: { duration: 5000 },
-    onStart: () => console.log("the spring has started"),
-  });
-
-  const animations = new Controller({ opacity: toggle ? 1 : 0 });
-
   return (
-    <Wrapper>
+    <div>
       <Navbar />
       <Sidebar />
       <SubMenu />
-      <div className="line">
+      {/* <div className="line">
         <Svg1 />
-        <animated.div style={animations.spting}>
-          <Svg2 />
-        </animated.div>
+        <Svg2 />
       </div>
       <div className="animate">
         <button onClick={() => setToggle(!toggle)}>animate</button>
-      </div>
-    </Wrapper>
+      </div> */}
+      <Wrapper>
+        <SvgMessenger />
+      </Wrapper>
+    </div>
   );
 };
 
 const Wrapper = styled.div`
-  button {
-    padding: 1rem;
-    cursor: pointer;
-  }
-  .animate {
-    position: absolute;
-    left: 200px;
-  }
-  .line {
-  }
+  display: flex;
+  justify-content: center;
 `;
-
 export default InfoPage;

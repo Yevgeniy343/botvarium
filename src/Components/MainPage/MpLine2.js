@@ -1,7 +1,7 @@
 import Wrapper from "./wr-MpLine2";
 import { useState } from "react";
 import { VscCode } from "react-icons/vsc";
-import Direction1 from "../MainPage/Directions/Direction1";
+
 import WebApp from "../Services/WebApp";
 import PwaApp from "../Services/PwaApp";
 import Portal from "../Services/Portal";
