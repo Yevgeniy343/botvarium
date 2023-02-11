@@ -100,10 +100,11 @@ const PortalPage = () => {
           </div>
           <div className="about">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              doloribus, totam explicabo ratione laboriosam assumenda facere
-              quidem quod excepturi nulla! A nihil cupiditate similique sint
-              quidem dolore corporis facilis illum!
+              Продуктивность сотрудников может быть онраничена за счет
+              изолирования от внешней среды и сосредоточенности на работе. Этого
+              можно достигнуть за счет корпоративного кортала, где
+              устанавливаются правили работодоталя, а доступ к внешней среде
+              ограничен.
             </p>
           </div>
         </div>
@@ -116,7 +117,7 @@ const PortalPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 1</span>
+          <span>Для чего нужен корпоративный портал</span>
         </motion.div>
         <motion.div
           className="right"
@@ -125,10 +126,10 @@ const PortalPage = () => {
           animate="visible"
         >
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            perferendis facilis, molestiae qui animi consequatur ipsa ad modi
-            neque. Obcaecati quae nisi eos vitae nulla explicabo beatae amet
-            omnis officia?
+            По сути, это внутренняя среда, для доступа сотрудников к
+            корпоративным данным. Корпоративный портал позволяет организовать
+            работу сотрудников, сониторинг и постановку задач а так же досуг и
+            информирование о внутренних мероприятиях компании.
           </p>
         </motion.div>
       </div>
@@ -139,7 +140,7 @@ const PortalPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 2</span>
+          <span>Задачи, решаемые корпоративным порталом</span>
         </motion.div>
         <motion.div
           className="right"
@@ -147,12 +148,12 @@ const PortalPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <p>
-            Далеко-далеко за словесными горами, в стране гласных и согласных
-            живут рыбные тексты. Но, инициал алфавит парадигматическая себя
-            лучше наш если? Единственное силуэт встретил lorem собрал
-            пунктуация, оксмокс лучше текстов запятых свой предложения.
-          </p>
+          <p>- публикация новостей и других материалов для сотрудников;</p>
+          <p>- создание базы файлов и документов;</p>
+          <p>- форум для внутреннего общения</p>
+          <p>- система управления задачами</p>
+          <p>- Вики-система</p>
+          <p>- групповой календарь</p>
         </motion.div>
       </div>
       <div className="line">
@@ -162,7 +163,9 @@ const PortalPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 3.</span>
+          <span>
+            Доступ и аутентификация сотрудников к корпоративному пространсту
+          </span>
         </motion.div>
         <motion.div
           className="right"
@@ -171,10 +174,9 @@ const PortalPage = () => {
           animate="visible"
         >
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-            architecto perferendis nostrum ab sed cum laudantium voluptates
-            obcaecati iusto, aliquam provident dolore aliquid nesciunt voluptas
-            magnam eveniet eligendi corporis recusandae.
+            Доступ может осуществляться как по двухфакторной аутентификации, так
+            и с ограничением по ip адресу, с которого осуществляется вход в
+            портал.
           </p>
         </motion.div>
       </div>
@@ -185,7 +187,7 @@ const PortalPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 4</span>
+          <span>Сроки и стоимость</span>
         </motion.div>
         <motion.div
           className="right"
@@ -194,10 +196,9 @@ const PortalPage = () => {
           animate="visible"
         >
           <p>
-            Mujer uno dolor más de, poder mismo si. Entero arquitecto columna
-            corrupto patrón culpa conejo, alma tenedor magma sintió permacultura
-            laboriosamente, rayo reincidente. Cerro corporal alveolar fantasía
-            letra ventana? Deleznable?
+            Разработка и тестирование простого портала, с возможностью обмена
+            данными и публикацией информации может занимать до месяца, но все
+            зависит от функционала корпоративного портала.
           </p>
         </motion.div>
       </div>

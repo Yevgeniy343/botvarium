@@ -195,7 +195,7 @@ const MessengerPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 4</span>
+          <span>Безопасность</span>
         </motion.div>
         <motion.div
           className="right"
