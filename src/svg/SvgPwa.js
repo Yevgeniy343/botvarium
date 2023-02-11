@@ -1,12 +1,17 @@
 import styled from "styled-components";
-import { motion, useCycle } from "framer-motion";
+import { easeOut, motion, useCycle } from "framer-motion";
 
 const variants1 = {
-  hidden: { y: 200, opacity: 1 },
+  hidden: { x: -35 },
   visible: {
-    y: 0,
-    opacity: 0.5,
-    transition: { duration: 3, repeat: Infinity },
+    x: 470,
+
+    transition: {
+      duration: 3,
+      repeat: Infinity,
+      repeatType: "reverse",
+      ease: "easeOut",
+    },
   },
 };
 const variants2 = {
@@ -29,7 +34,7 @@ function Icon() {
         viewBox="0 0 1139.171 654.543"
       >
         <circle cx="246.827" cy="521.765" r="59.243" fill="#f2f2f2"></circle>
-        <circle cx="256.46" cy="513.095" r="59.243" fill="#00aa57"></circle>
+        <circle cx="256.46" cy="513.095" r="59.243" fill="#b45af2"></circle>
         <path
           fill="#3f3d56"
           d="M304.171 447.543H1037.171V449.543H304.171z"
@@ -47,13 +52,16 @@ function Icon() {
           d="M498.374 403.667L50.406 403.667 50.406 49.754 498.374 403.667z"
           opacity="0.1"
         ></path>
-        <circle
+        <motion.circle
+          variants={variants1}
+          initial="hidden"
+          animate="visible"
           id="circle"
           cx="148.574"
           cy="316.876"
           r="60.307"
           fill="#f2f2f2"
-        ></circle>
+        ></motion.circle>
         <path
           fill="#3f3d56"
           d="M509.953 240.622H568.558V252.86800000000002H509.953z"
@@ -92,7 +100,7 @@ function Icon() {
           fill="#3f3d56"
           d="M192.672 652.543H447.672V654.543H192.672z"
         ></path>
-        <path fill="#00aa57" d="M471 550H499V578H471z"></path>
+        <path fill="#b45af2" d="M471 550H499V578H471z"></path>
         <path
           fill="#3f3d56"
           d="M516 562h-34v-34h34zm-32.522-1.478h31.044v-31.044h-31.044z"
@@ -102,7 +110,7 @@ function Icon() {
           fill="#3f3d56"
           d="M841 34h-34V0h34zm-32.522-1.478h31.044V1.478h-31.044z"
         ></path>
-        <path fill="#00aa57" d="M1078 550H1106V578H1078z"></path>
+        <path fill="#b45af2" d="M1078 550H1106V578H1078z"></path>
         <path
           fill="#3f3d56"
           d="M1123 562h-34v-34h34zm-32.522-1.478h31.044v-31.044h-31.044zM1057.171 231.958h-2.378v-65.161a37.714 37.714 0 00-37.714-37.714H879.025a37.714 37.714 0 00-37.713 37.714v357.481a37.714 37.714 0 0037.713 37.714h138.054a37.714 37.714 0 0037.714-37.714V278.341h2.378z"

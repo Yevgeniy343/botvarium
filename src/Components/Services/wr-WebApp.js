@@ -88,7 +88,7 @@ const Wrapper = styled.div`
       color: var(--theme-ui-colors-black10);
       padding: 1rem;
       border-radius: 10px;
-      opacity: 0.7;
+      /* opacity: 0.7; */
       span {
         text-indent: 1rem;
         font-weight: 900;

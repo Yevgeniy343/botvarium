@@ -3,25 +3,9 @@ import styled from "styled-components";
 const Wrapper = styled.main`
   display: grid;
 
-  /* grid-gap: 1rem; */
   .left-block {
-    /* height: 50vh; */
     padding: 0 0.5rem;
     margin: 0 0.5rem;
-    /* overflow-y: auto; */
-
-    /* ::-webkit-scrollbar {
-      width: 5px;
-      height: 13px;
-    }
-    ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px grey;
-      border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: var(--base0E);
-      border-radius: 10px;
-    } */
   }
   .direction {
     p {
@@ -87,9 +71,11 @@ const Wrapper = styled.main`
     grid-template-columns: 3fr 1fr;
     .left-block {
       height: 60vh;
+      margin-left: 1rem;
     }
     .direction {
       height: 80%;
+      margin-right: 1rem;
     }
     .direction-item {
       min-width: max-content;
@@ -104,6 +90,12 @@ const Wrapper = styled.main`
 
   @media (min-width: 1320px) {
     grid-template-columns: 4fr 1fr;
+    .left-block {
+      margin-left: 3rem;
+    }
+    .direction {
+      margin-right: 3rem;
+    }
   }
 `;
 export default Wrapper;
