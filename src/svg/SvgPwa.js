@@ -190,7 +190,7 @@ const Wrapper = styled.div`
   @media (min-width: 1320px) {
     .icon {
       position: absolute;
-      left: 450px;
+      left: 480px;
       top: 280px;
       width: 600px;
     }
