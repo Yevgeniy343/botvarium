@@ -96,14 +96,14 @@ const LcClientsPage = () => {
           }}
         >
           <div className="header">
-            <p>Личный кабинет клиентов</p>
+            <p>Личный кабинет клиента</p>
           </div>
           <div className="about">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              doloribus, totam explicabo ratione laboriosam assumenda facere
-              quidem quod excepturi nulla! A nihil cupiditate similique sint
-              quidem dolore corporis facilis illum!
+              У Вас есть сайт? Вы хотите организовать клиентсую программу,
+              создать базу клиентов, вести статистику ну или прост информировать
+              клиентов о своих акциях, это то, что можно сделать с помошью
+              личного кабинета на своем сайте7
             </p>
           </div>
         </div>
@@ -116,7 +116,7 @@ const LcClientsPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 1</span>
+          <span>Для чего нужен личный кабинет для клиентов на Вашем сайте</span>
         </motion.div>
         <motion.div
           className="right"
@@ -125,10 +125,10 @@ const LcClientsPage = () => {
           animate="visible"
         >
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            perferendis facilis, molestiae qui animi consequatur ipsa ad modi
-            neque. Obcaecati quae nisi eos vitae nulla explicabo beatae amet
-            omnis officia?
+            Любой бизнес ведет базу своих клиентов. Очень важно, когда клиенты
+            получают информацию о Ваших акциях, видят свои бонусы, ну ли проосто
+            могут Вам написать свой отзыв о сервисе или обраьиться в поддержку
+            компании.
           </p>
         </motion.div>
       </div>
@@ -139,7 +139,7 @@ const LcClientsPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 2</span>
+          <span>Как клиенту попасть в свой личный кабинет Вашей компании</span>
         </motion.div>
         <motion.div
           className="right"
@@ -148,10 +148,10 @@ const LcClientsPage = () => {
           animate="visible"
         >
           <p>
-            Далеко-далеко за словесными горами, в стране гласных и согласных
-            живут рыбные тексты. Но, инициал алфавит парадигматическая себя
-            лучше наш если? Единственное силуэт встретил lorem собрал
-            пунктуация, оксмокс лучше текстов запятых свой предложения.
+            Как правило вход в личный кабинет расположен через официальный сайт
+            компании, но может быть вынесен в отдельное приложение млм сервис.
+            [аутентификация возможна по логину и паролю. либо двухфакторная. Все
+            зависит от образа и зарактра Вашего клиента.]
           </p>
         </motion.div>
       </div>
@@ -162,7 +162,7 @@ const LcClientsPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 3.</span>
+          <span>Безопасность</span>
         </motion.div>
         <motion.div
           className="right"
@@ -171,10 +171,11 @@ const LcClientsPage = () => {
           animate="visible"
         >
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-            architecto perferendis nostrum ab sed cum laudantium voluptates
-            obcaecati iusto, aliquam provident dolore aliquid nesciunt voluptas
-            magnam eveniet eligendi corporis recusandae.
+            Данные Ваших клиентов находятся в зашифрованном виде. Дополнительной
+            защитой является разрыв сессии через определенное время. Возможно
+            добавление двухфакторной аутентификации и дополнительных мер
+            безопасности. Все зависит от того, как часто Ваши клиенты используют
+            личный кабинет.
           </p>
         </motion.div>
       </div>
@@ -185,7 +186,7 @@ const LcClientsPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 4</span>
+          <span>Сроки разраблтки и стоимость</span>
         </motion.div>
         <motion.div
           className="right"
@@ -194,10 +195,9 @@ const LcClientsPage = () => {
           animate="visible"
         >
           <p>
-            Mujer uno dolor más de, poder mismo si. Entero arquitecto columna
-            corrupto patrón culpa conejo, alma tenedor magma sintió permacultura
-            laboriosamente, rayo reincidente. Cerro corporal alveolar fantasía
-            letra ventana? Deleznable?
+            Разработка и тестирование простого личного кабинета, как правило 1-2
+            недели, но все зависит от количества функций, которые выполняет
+            приложение.
           </p>
         </motion.div>
       </div>

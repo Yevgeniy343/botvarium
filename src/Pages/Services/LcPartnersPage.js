@@ -170,10 +170,8 @@ const LcPartnersPage = () => {
           animate="visible"
         >
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-            architecto perferendis nostrum ab sed cum laudantium voluptates
-            obcaecati iusto, aliquam provident dolore aliquid nesciunt voluptas
-            magnam eveniet eligendi corporis recusandae.
+            Доступ может осуществляться как по двухфакторной аутентификации, так
+            и по логину и паролю.
           </p>
         </motion.div>
       </div>

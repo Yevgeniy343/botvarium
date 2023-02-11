@@ -76,12 +76,7 @@ const rightVariants4 = {
 const WebAppPage = () => {
   const ref = useRef(null);
 
-  const isInView = useInView(ref, { once: true });
-
   const dispatch = useDispatch();
-  useEffect(() => {
-    console.log("Element is in view: ", isInView);
-  }, [isInView]);
 
   const image1 =
     "https://media.istockphoto.com/id/1221468639/vector/abstract-white-background-geometric-texture.jpg?s=612x612&w=0&k=20&c=Y556Rao4a4bnaBx_EX1ZGGseGwLeIzzJJA52qj0I4dc=";
@@ -196,7 +191,7 @@ const WebAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>Этапы разраблтки и стоимость</span>
+          <span>Сроки разраблтки и стоимость</span>
         </motion.div>
         <motion.div
           ref={ref}
@@ -205,7 +200,13 @@ const WebAppPage = () => {
           initial="hidden"
           animate="visible"
         >
-          описание
+          <p>
+            {" "}
+            Минимальный срок, разработки web-приложения может занимать неделю,
+            при условии. что плиложение выполняет нескользо функций и имеет
+            стандартные способы аутентификации. Более точно понять по срокам
+            выполнения задачи, можно обратившись в поддержку.
+          </p>
         </motion.div>
       </div>
       <div className="content"></div>
