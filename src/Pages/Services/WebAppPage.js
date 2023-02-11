@@ -3,9 +3,10 @@ import Navbar from "../../Components/Navigation/Navbar";
 import Sidebar from "../../Components/Navigation/Sidebar";
 import SubMenu from "../../Components/Navigation/SubMenu";
 import { Parallax } from "react-parallax";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { closeSubmenu } from "../../features/userSlice";
 import { useDispatch } from "react-redux";
+import { useRef, useEffect } from "react";
 
 const leftVariants1 = {
   hidden: { x: -500, opacity: 0 },
@@ -73,7 +74,14 @@ const rightVariants4 = {
 };
 
 const WebAppPage = () => {
+  const ref = useRef(null);
+
+  const isInView = useInView(ref, { once: true });
+
   const dispatch = useDispatch();
+  useEffect(() => {
+    console.log("Element is in view: ", isInView);
+  }, [isInView]);
 
   const image1 =
     "https://media.istockphoto.com/id/1221468639/vector/abstract-white-background-geometric-texture.jpg?s=612x612&w=0&k=20&c=Y556Rao4a4bnaBx_EX1ZGGseGwLeIzzJJA52qj0I4dc=";
@@ -191,6 +199,7 @@ const WebAppPage = () => {
           <span>Этапы разраблтки и стоимость</span>
         </motion.div>
         <motion.div
+          ref={ref}
           className="right"
           variants={rightVariants4}
           initial="hidden"

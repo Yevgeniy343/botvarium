@@ -60,7 +60,9 @@ const Wrapper = styled.div`
     border-radius: 10px;
     padding: 1rem;
   }
-
+  .blank {
+    cursor: pointer;
+  }
   @media (min-width: 768px) {
     .header {
       font-size: 4rem;

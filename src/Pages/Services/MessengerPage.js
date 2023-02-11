@@ -6,6 +6,7 @@ import { Parallax } from "react-parallax";
 import { motion } from "framer-motion";
 import { closeSubmenu } from "../../features/userSlice";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const leftVariants1 = {
   hidden: { x: -500, opacity: 0 },
@@ -74,6 +75,7 @@ const rightVariants4 = {
 
 const MessengerPage = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const image1 =
     "https://media.istockphoto.com/id/1221468639/vector/abstract-white-background-geometric-texture.jpg?s=612x612&w=0&k=20&c=Y556Rao4a4bnaBx_EX1ZGGseGwLeIzzJJA52qj0I4dc=";
@@ -100,10 +102,11 @@ const MessengerPage = () => {
           </div>
           <div className="about">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              doloribus, totam explicabo ratione laboriosam assumenda facere
-              quidem quod excepturi nulla! A nihil cupiditate similique sint
-              quidem dolore corporis facilis illum!
+              Cтремительно развивается популярность приложений для обмена
+              сообщениями. Пользователи предпочитают мессенджеры, потому что они
+              позволяют взаимодействовать в режиме реального времени. Мы
+              занимаемся разработкой мессенджеров, которые можно использовать
+              внутри своей компании, для взаимодействия с коллегами и клиентами.
             </p>
           </div>
         </div>
@@ -116,7 +119,7 @@ const MessengerPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 1</span>
+          <span>Типовой вариант мессенджера</span>
         </motion.div>
         <motion.div
           className="right"
@@ -125,10 +128,16 @@ const MessengerPage = () => {
           animate="visible"
         >
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            perferendis facilis, molestiae qui animi consequatur ipsa ad modi
-            neque. Obcaecati quae nisi eos vitae nulla explicabo beatae amet
-            omnis officia?
+            WEB Messenger - типовой вариант веб мессенджера, который может быть
+            полностью изменен, как по стилям так и добавлен и доработан любой
+            функционал, логика и интеграция. Тестовый вариант доступен по
+            ссылке:
+            <span
+              className="blank"
+              onClick={() => window.open("http://botvarium.site", "_blank")}
+            >
+              http://botvarium.site
+            </span>
           </p>
         </motion.div>
       </div>
@@ -139,7 +148,7 @@ const MessengerPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 2</span>
+          <span>Возможности</span>
         </motion.div>
         <motion.div
           className="right"
@@ -148,10 +157,9 @@ const MessengerPage = () => {
           animate="visible"
         >
           <p>
-            Далеко-далеко за словесными горами, в стране гласных и согласных
-            живут рыбные тексты. Но, инициал алфавит парадигматическая себя
-            лучше наш если? Единственное силуэт встретил lorem собрал
-            пунктуация, оксмокс лучше текстов запятых свой предложения.
+            Приложение дает возможность отправлять сообщения и изображения в
+            реальном времени с другим зарегистрированным пользователям. Вся
+            загружаемая и отправляемая информация интегрирована с базой данных.
           </p>
         </motion.div>
       </div>
@@ -162,7 +170,7 @@ const MessengerPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 3.</span>
+          <span>Адаптивность</span>
         </motion.div>
         <motion.div
           className="right"
@@ -171,10 +179,12 @@ const MessengerPage = () => {
           animate="visible"
         >
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-            architecto perferendis nostrum ab sed cum laudantium voluptates
-            obcaecati iusto, aliquam provident dolore aliquid nesciunt voluptas
-            magnam eveniet eligendi corporis recusandae.
+            Мессенджер может быть адаптирован на любое устройство под любой
+            операционной системой, при использовании технологии
+            <span className="blank" onClick={() => navigate("/pwa-app")}>
+              {" "}
+              PWA (Progressive Web-App){" "}
+            </span>
           </p>
         </motion.div>
       </div>
@@ -194,10 +204,10 @@ const MessengerPage = () => {
           animate="visible"
         >
           <p>
-            Mujer uno dolor más de, poder mismo si. Entero arquitecto columna
-            corrupto patrón culpa conejo, alma tenedor magma sintió permacultura
-            laboriosamente, rayo reincidente. Cerro corporal alveolar fantasía
-            letra ventana? Deleznable?
+            Данные пользователей находятся в зашифрованном виде. Дополнительной
+            защитой является разрыв сессии через определенное время. Возможно
+            добавление двухфакторной аутентификации и дополнительных мер
+            безопасности
           </p>
         </motion.div>
       </div>
