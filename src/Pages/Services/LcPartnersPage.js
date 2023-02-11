@@ -100,10 +100,10 @@ const LcPartnersPage = () => {
           </div>
           <div className="about">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              doloribus, totam explicabo ratione laboriosam assumenda facere
-              quidem quod excepturi nulla! A nihil cupiditate similique sint
-              quidem dolore corporis facilis illum!
+              Вы ведете бизнес, у Вас есть сайт, есть партнеры с которыми Вы
+              работаете, ну и Вас есть информация, которую Вам надо им доносить
+              либо выкладывать отч§ты и вести с ними обшение. В общем, Вы лучще,
+              что Вам нужно!
             </p>
           </div>
         </div>
@@ -116,7 +116,7 @@ const LcPartnersPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 1</span>
+          <span>Для чего нужен личный кабинет партнеров на Вашем сайте</span>
         </motion.div>
         <motion.div
           className="right"
@@ -125,10 +125,10 @@ const LcPartnersPage = () => {
           animate="visible"
         >
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            perferendis facilis, molestiae qui animi consequatur ipsa ad modi
-            neque. Obcaecati quae nisi eos vitae nulla explicabo beatae amet
-            omnis officia?
+            У Вас склад? Магазин? Да либо просто представители Вашего бизнеса,
+            которые Вам помогают его развивать и у Вас есть информация и данные,
+            которыми Вы друг перед другом отчитыватесь. То это и есть личный
+            кабинет партнеров, где можно все конфиденциально организовать.
           </p>
         </motion.div>
       </div>
@@ -139,7 +139,7 @@ const LcPartnersPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 2</span>
+          <span>Какие задачи помодет решить личный кабтнет партнеров</span>
         </motion.div>
         <motion.div
           className="right"
@@ -147,12 +147,11 @@ const LcPartnersPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <p>
-            Далеко-далеко за словесными горами, в стране гласных и согласных
-            живут рыбные тексты. Но, инициал алфавит парадигматическая себя
-            лучше наш если? Единственное силуэт встретил lorem собрал
-            пунктуация, оксмокс лучше текстов запятых свой предложения.
-          </p>
+          <p>- сводные отчеты;</p>
+          <p>- партнерские начисления;</p>
+          <p>- отчеты по выплатам;</p>
+          <p>- выполнение плана и другая статистика;</p>
+          <p>- да, Вам виднее, мы лишь разработаем то. что Вам нужно!</p>
         </motion.div>
       </div>
       <div className="line">
@@ -162,7 +161,7 @@ const LcPartnersPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 3.</span>
+          <span>Доступ и аутентификация к порталу</span>
         </motion.div>
         <motion.div
           className="right"
@@ -185,7 +184,7 @@ const LcPartnersPage = () => {
           initial="hidden"
           animate="visible"
         >
-          <span>idea 4</span>
+          <span>Сроки и стоимость</span>
         </motion.div>
         <motion.div
           className="right"
@@ -194,10 +193,9 @@ const LcPartnersPage = () => {
           animate="visible"
         >
           <p>
-            Mujer uno dolor más de, poder mismo si. Entero arquitecto columna
-            corrupto patrón culpa conejo, alma tenedor magma sintió permacultura
-            laboriosamente, rayo reincidente. Cerro corporal alveolar fantasía
-            letra ventana? Deleznable?
+            Разработка и тестирование простого кабинета партнера с выполнением
+            до 5-ти функций, со всеми ТЗ, может занять до месяца. Ну а сложные,
+            многофункциональные порталы могут занять и больше времени.
           </p>
         </motion.div>
       </div>
