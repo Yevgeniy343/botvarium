@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Wrapper = styled.main`
   width: 100vw;
   height: 100vh;
-  background-color: var(--bd-purple);
+
   @media (min-width: 768px) {
   }
 
