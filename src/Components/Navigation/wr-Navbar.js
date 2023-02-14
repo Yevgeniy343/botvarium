@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  position: sticky;
-  top: 0px;
   p {
     font-family: "Source Code Pro", monospace;
   }
@@ -144,6 +142,10 @@ const Wrapper = styled.div`
     .logo {
       height: 30px;
     }
+  }
+  @media (min-width: 992px) {
+    position: sticky;
+    top: 0px;
   }
 `;
 export default Wrapper;
