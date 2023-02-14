@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Tooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 
 const Wrapper = styled.div`
   display: flex;
@@ -11,11 +13,18 @@ const Wrapper = styled.div`
     width: 50%;
     height: 50%;
   }
+  .tooltip {
+    background-color: var(--theme-ui-colors-green05);
+    color: var(--theme-ui-colors-green70);
+    font-weight: 700;
+    transition: var(--transition2);
+  }
 `;
 
 function Icon() {
   return (
-    <Wrapper>
+    <Wrapper id="react" data-tooltip-content="React">
+      <Tooltip anchorId="react" className="tooltip" />
       <motion.svg
         whileHover={{ scale: 0.9 }}
         whileTap={{ scale: 0.8 }}
