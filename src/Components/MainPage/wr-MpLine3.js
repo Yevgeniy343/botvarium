@@ -21,8 +21,8 @@ const Wrapper = styled.main`
     justify-content: center;
   }
   .tech-item {
-    width: 140px;
-    min-width: 160px;
+    width: 120px;
+    min-width: 120px;
     margin: 1rem;
   }
 
