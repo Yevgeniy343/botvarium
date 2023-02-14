@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   .burger {
     z-index: 3;
     position: sticky;
+    left: 40px;
   }
   .link-btn {
     height: 100%;
@@ -60,13 +61,13 @@ const Wrapper = styled.div`
 
   .nav-toggle {
     font-size: 1.7rem;
-    color: var(--theme-ui-colors-green50);
+    color: var(--theme-ui-colors-green60);
     background: transparent;
     border-color: transparent;
     /* transition: var(--transition); */
     cursor: pointer;
 
-    width: 70px;
+    width: 40px;
     height: 30px;
     border-radius: 50px;
     background: var(--accent);
@@ -146,6 +147,7 @@ const Wrapper = styled.div`
   @media (min-width: 992px) {
     position: sticky;
     top: 0px;
+    z-index: 2;
   }
 `;
 export default Wrapper;

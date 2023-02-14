@@ -1,30 +1,32 @@
 import styled from "styled-components";
 
 const Wrapper = styled.main`
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  border-bottom: 1px gray solid;
-  overflow-x: scroll;
-  width: calc(100vw-20px);
+  font-family: "Source Code Pro", monospace;
+  border: 1px solid gray;
+  margin: 0 2rem;
 
-  .boxes {
+  .header {
     display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    font-weight: 900;
+    color: var(--theme-ui-colors-green60);
+    margin: 2rem;
+    margin-bottom: 0.5rem;
   }
-  .box {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    height: 250px;
-    width: 200px;
-    border: 1px solid gray;
-    background: linear-gradient(250deg, #b6bdca, #d19a66);
+  .tech-list {
+    display: flex;
+    align-items: center;
+  }
+  .tech-item {
+    width: 120px;
+    min-width: 120px;
+    margin: 1rem 2rem;
   }
 
   @media (min-width: 768px) {
-    width: calc(100vw-100px);
   }
   @media (min-width: 992px) {
-    width: calc(100vw-300px);
   }
 `;
 export default Wrapper;
