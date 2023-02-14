@@ -1,20 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
+  cursor: pointer;
 
   svg {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
   }
 `;
 
 function Icon() {
   return (
     <Wrapper>
-      <svg
+      <motion.svg
+        whileHover={{ scale: 0.9 }}
+        whileTap={{ scale: 0.8 }}
+        transition={{ duration: 0.5 }}
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         width="2500"
@@ -174,7 +179,7 @@ function Icon() {
             </g>
           </g>
         </g>
-      </svg>
+      </motion.svg>
     </Wrapper>
   );
 }
