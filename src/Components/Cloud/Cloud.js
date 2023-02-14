@@ -14,7 +14,12 @@ import { useMemo } from "react";
 import Button from "./Button";
 import { Vector3 } from "three";
 
+import { useDispatch } from "react-redux";
+import { closeSubmenu } from "../../features/userSlice";
+
 const Cloud = () => {
+  const dispatch = useDispatch();
+
   const ref = useRef();
   // console.log(ref);
   const polyhedron = [
@@ -47,7 +52,11 @@ const Cloud = () => {
     });
   };
   return (
-    <Wrapper>
+    <Wrapper
+      onMouseOver={() => {
+        dispatch(closeSubmenu());
+      }}
+    >
       <Canvas camera={{ position: [0, 0, 8] }}>
         <Environment preset="park" background />
         <directionalLight position={[5, 10, 5]} castShadow />
