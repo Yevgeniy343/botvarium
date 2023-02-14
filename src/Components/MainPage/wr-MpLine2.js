@@ -58,6 +58,9 @@ const Wrapper = styled.main`
   }
 
   @media (min-width: 992px) {
+    .left-block {
+      margin-left: 3rem;
+    }
     .direction-item {
       padding: 0.3rem 0.4rem;
 
@@ -71,11 +74,11 @@ const Wrapper = styled.main`
     grid-template-columns: 3fr 1fr;
     .left-block {
       height: 60vh;
-      margin-left: 1rem;
+      margin-left: 3rem;
     }
     .direction {
       height: 80%;
-      margin-right: 1rem;
+      margin-right: 3rem;
     }
     .direction-item {
       min-width: max-content;
