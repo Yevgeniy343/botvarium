@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 const Wrapper = styled.main`
+  .big-test {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   circle,
   rect,
   line {

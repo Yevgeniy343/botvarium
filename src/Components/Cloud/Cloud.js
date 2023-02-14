@@ -47,8 +47,9 @@ const Cloud = () => {
     useFrame(({ camera, mouse }) => {
       //   camera.position.x = mouse.x;
       //   camera.position.y = mouse.y;
-      vec.set(mouse.x, mouse.y, camera.position.z);
+      vec.set(mouse.x * 2, mouse.y * 2, camera.position.z);
       camera.position.lerp(vec, 0.025);
+      camera.lookAt(0, 0, 0);
     });
   };
   return (
@@ -57,7 +58,7 @@ const Cloud = () => {
         dispatch(closeSubmenu());
       }}
     >
-      <Canvas camera={{ position: [0, 0, 8] }}>
+      <Canvas camera={{ position: [0, 0, 4] }}>
         <Environment preset="park" background />
         <directionalLight position={[5, 10, 5]} castShadow />
         {/* <Element
@@ -88,7 +89,7 @@ const Cloud = () => {
           Тютя
         </Text> */}
 
-        <OrbitControls zoomSpeed={0.2} />
+        {/* <OrbitControls zoomSpeed={0.2} /> */}
         {/* <TrackballControls /> */}
         {/* <axesHelper ref={ref} args={[5]} /> */}
         {/* <gridHelper args={[100, 100, 0xff0000, "teal"]} /> */}
