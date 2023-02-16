@@ -5,7 +5,11 @@ const Wrapper = styled.div`
     display: flex;
     height: 100%;
   }
-
+  .nav {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+  }
   @media (min-width: 768px) {
   }
   @media (min-width: 992px) {

@@ -14,7 +14,18 @@ const sublinks = [
   },
   {
     page: "Технологии",
-    links: [{ label: "Nodejs", url: "/technology/node" }],
+    links: [
+      { label: "Nodejs", url: "/technology" },
+      { label: "Docker", url: "/technology" },
+      { label: "MongoDB", url: "/technology" },
+      { label: "Redis", url: "/technology" },
+      { label: "PostgreSQL", url: "/technology" },
+      { label: "React", url: "/technology" },
+      { label: "CSS", url: "/technology" },
+      { label: "Angular", url: "/technology" },
+      { label: "Nextjs", url: "/technology" },
+      { label: "Django", url: "/technology" },
+    ],
   },
   {
     page: "Знания",

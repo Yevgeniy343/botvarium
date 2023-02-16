@@ -12,7 +12,10 @@ const Technology = () => {
       <Sidebar />
       <SubMenu />
       <div className="content">
-        <TechNav />
+        <div className="nav">
+          <TechNav />
+        </div>
+
         <Node />
       </div>
     </Wrapper>

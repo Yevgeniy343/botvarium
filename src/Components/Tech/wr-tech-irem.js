@@ -7,8 +7,10 @@ const Wrapper = styled.div`
   margin: 1rem;
   width: 100%;
   height: 100%;
+
   .icon {
     width: 100%;
+    margin-bottom: 1rem;
     svg {
       width: 15%;
     }
@@ -33,6 +35,7 @@ const Wrapper = styled.div`
   .content div {
     margin: 1rem;
     border-radius: 5px;
+    box-shadow: var(--box-shadow-active);
   }
   .about {
     min-height: 200px;
