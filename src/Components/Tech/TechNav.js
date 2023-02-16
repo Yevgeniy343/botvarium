@@ -32,61 +32,61 @@ const TechNav = () => {
           <div className="icon">
             <IconNode />
           </div>
-          <p>Nodejs</p>
+          <p className="label">Nodejs</p>
         </div>
         <div className="item">
           <div className="icon">
             <IconDocker />
           </div>
-          <p>Docker</p>
+          <p className="label">Docker</p>
         </div>
         <div className="item">
           <div className="icon">
             <IconMongo />
           </div>
-          <p>MongoDB</p>
+          <p className="label">MongoDB</p>
         </div>
         <div className="item">
           <div className="icon">
             <IconRedis />
           </div>
-          <p>Redis</p>
+          <p className="label">Redis</p>
         </div>
         <div className="item">
           <div className="icon">
             <IconPostgree />
           </div>
-          <p>PostgreeSQL</p>
+          <p className="label"> PostgreeSQL</p>
         </div>
         <div className="item">
           <div className="icon">
             <IconReact />
           </div>
-          <p>Reacts</p>
+          <p className="label">Reacts</p>
         </div>
         <div className="item">
           <div className="icon">
             <IconCss />
           </div>
-          <p>CSS</p>
+          <p className="label">CSS</p>
         </div>
         <div className="item">
           <div className="icon">
             <IconAngular />
           </div>
-          <p>Angular</p>
+          <p className="label">Angular</p>
         </div>
         <div className="item">
           <div className="icon">
             <IconNext />
           </div>
-          <p>Nextjs</p>
+          <p className="label">Nextjs</p>
         </div>
         <div className="item">
           <div className="icon">
             <IconDjango />
           </div>
-          <p>Django</p>
+          <p className="label">Django</p>
         </div>
       </motion.div>
     </Wrapper>

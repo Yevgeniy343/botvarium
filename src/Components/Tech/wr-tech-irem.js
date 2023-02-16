@@ -13,6 +13,7 @@ const Wrapper = styled.div`
     margin-bottom: 1rem;
     svg {
       width: 15%;
+      min-width: 150px;
     }
   }
   .content {
@@ -78,12 +79,17 @@ const Wrapper = styled.div`
   }
   .text {
     margin: 1rem;
-    margin-left: 7rem;
+    margin-left: 2rem;
     font-weight: 700;
   }
   @media (min-width: 768px) {
   }
   @media (min-width: 992px) {
+    .text {
+      margin: 1rem;
+      margin-left: 7rem;
+      font-weight: 700;
+    }
   }
   @media (min-width: 1140px) {
   }
