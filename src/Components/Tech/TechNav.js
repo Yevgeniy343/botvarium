@@ -9,70 +9,86 @@ import IconReact from "../Tech/SvgReact";
 import IconAngular from "../Tech/SvgAngular";
 import IconNext from "../Tech/SvgNext";
 import IconDjango from "../Tech/SvgDjango";
+import { motion } from "framer-motion";
 
 const TechNav = () => {
+  const pathVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+
+      transition: {
+        duration: 1.5,
+        ease: "easeInOut",
+      },
+    },
+  };
   return (
-    <Wrapper>
-      <div className="item">
-        <div className="icon">
-          <IconNode />
+    <Wrapper variants={pathVariants} initial="hidden" animate="visible">
+      <motion.div variants={pathVariants} initial="hidden" animate="visible">
+        <div className="item">
+          <div className="icon">
+            <IconNode />
+          </div>
+          <p>Nodejs</p>
         </div>
-        <p>Nodejs</p>
-      </div>
-      <div className="item">
-        <div className="icon">
-          <IconDocker />
+        <div className="item">
+          <div className="icon">
+            <IconDocker />
+          </div>
+          <p>Docker</p>
         </div>
-        <p>Docker</p>
-      </div>
-      <div className="item">
-        <div className="icon">
-          <IconMongo />
+        <div className="item">
+          <div className="icon">
+            <IconMongo />
+          </div>
+          <p>MongoDB</p>
         </div>
-        <p>MongoDB</p>
-      </div>
-      <div className="item">
-        <div className="icon">
-          <IconRedis />
+        <div className="item">
+          <div className="icon">
+            <IconRedis />
+          </div>
+          <p>Redis</p>
         </div>
-        <p>Redis</p>
-      </div>
-      <div className="item">
-        <div className="icon">
-          <IconPostgree />
+        <div className="item">
+          <div className="icon">
+            <IconPostgree />
+          </div>
+          <p>PostgreeSQL</p>
         </div>
-        <p>PostgreeSQL</p>
-      </div>
-      <div className="item">
-        <div className="icon">
-          <IconReact />
+        <div className="item">
+          <div className="icon">
+            <IconReact />
+          </div>
+          <p>Reacts</p>
         </div>
-        <p>Reacts</p>
-      </div>
-      <div className="item">
-        <div className="icon">
-          <IconCss />
+        <div className="item">
+          <div className="icon">
+            <IconCss />
+          </div>
+          <p>CSS</p>
         </div>
-        <p>CSS</p>
-      </div>
-      <div className="item">
-        <div className="icon">
-          <IconAngular />
+        <div className="item">
+          <div className="icon">
+            <IconAngular />
+          </div>
+          <p>Angular</p>
         </div>
-        <p>Angular</p>
-      </div>
-      <div className="item">
-        <div className="icon">
-          <IconNext />
+        <div className="item">
+          <div className="icon">
+            <IconNext />
+          </div>
+          <p>Nextjs</p>
         </div>
-        <p>Nextjs</p>
-      </div>
-      <div className="item">
-        <div className="icon">
-          <IconDjango />
+        <div className="item">
+          <div className="icon">
+            <IconDjango />
+          </div>
+          <p>Django</p>
         </div>
-        <p>Django</p>
-      </div>
+      </motion.div>
     </Wrapper>
   );
 };

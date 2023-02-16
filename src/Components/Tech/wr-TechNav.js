@@ -4,9 +4,11 @@ const Wrapper = styled.div`
   width: 300px;
   height: 100%;
   margin: 1rem;
+  margin-top: 2rem;
   border-bottom-right-radius: 80px 80px;
   border-top-right-radius: 80px 80px;
   border: 1px solid var(--theme-ui-colors-green50);
+  border-left: 10px solid var(--theme-ui-colors-green50);
   background-color: var(--theme-ui-colors-green05);
   box-shadow: 10px 5px 50px var(--theme-ui-colors-green10);
 

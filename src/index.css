@@ -18,7 +18,7 @@ html {
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Source+Code+Pro:wght@200&display=swap");
 
 code {
-  font-family: Akzidenz Grotesk BQ Light, Helvetica;
+  font-family: "Source Code Pro", monospace;
 }
 :root {
   --codeEditor: #55718d;

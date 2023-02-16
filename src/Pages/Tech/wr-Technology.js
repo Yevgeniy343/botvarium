@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  height: 100%;
+  .content {
+    display: flex;
+    height: 100%;
+  }
+
   @media (min-width: 768px) {
   }
   @media (min-width: 992px) {

@@ -20,34 +20,34 @@ const MpLine3 = () => {
       </div>
 
       <div className="tech-list">
-        <div className="tech-item" onClick={() => navigate("/technology/node")}>
+        <div className="tech-item" onClick={() => navigate("/technology")}>
           <IconNode />
         </div>
-        <div className="tech-item">
+        <div className="tech-item" onClick={() => navigate("/technology")}>
           <IconDocker />
         </div>
-        <div className="tech-item">
+        <div className="tech-item" onClick={() => navigate("/technology")}>
           <IconMongo />
         </div>
-        <div className="tech-item">
+        <div className="tech-item" onClick={() => navigate("/technology")}>
           <IconRedis />
         </div>
-        <div className="tech-item">
+        <div className="tech-item" onClick={() => navigate("/technology")}>
           <IconPostgree />
         </div>
-        <div className="tech-item">
+        <div className="tech-item" onClick={() => navigate("/technology")}>
           <IconCss />
         </div>
-        <div className="tech-item">
+        <div className="tech-item" onClick={() => navigate("/technology")}>
           <IconReact />
         </div>
-        <div className="tech-item">
+        <div className="tech-item" onClick={() => navigate("/technology")}>
           <IconAngular />
         </div>
-        <div className="tech-item">
+        <div className="tech-item" onClick={() => navigate("/technology")}>
           <IconNext />
         </div>
-        <div className="tech-item">
+        <div className="tech-item" onClick={() => navigate("/technology")}>
           <IconDjango />
         </div>
       </div>

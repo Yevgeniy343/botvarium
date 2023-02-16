@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { Tooltip } from "react-tooltip";
-import "react-tooltip/dist/react-tooltip.css";
 
 const Wrapper = styled.div`
   display: flex;
@@ -24,7 +22,6 @@ function Icon() {
   return (
     <>
       <Wrapper id="next" data-tooltip-content="Nextjs">
-        <Tooltip anchorId="next" className="tooltip" />
         <motion.svg
           whileHover={{ scale: 0.9 }}
           whileTap={{ scale: 0.8 }}
