@@ -2,14 +2,11 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   width: 300px;
-  .tree-item {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #ccc;
-    padding: 0.5rem;
-    cursor: pointer;
-  }
+  height: 80vh;
+  border: 1px solid gray;
+  margin: 1rem;
+  overflow-y: auto;
+
   @media (min-width: 768px) {
   }
   @media (min-width: 992px) {

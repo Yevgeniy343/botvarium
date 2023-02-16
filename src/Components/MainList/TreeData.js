@@ -1,31 +1,31 @@
 const treeData = [
   {
     id: "1",
-    label: "Documents",
+    label: "Level1",
     children: [
       {
         id: "2",
-        label: "Document 1-1",
+        label: "Level2",
         children: [
           {
             id: "3",
-            label: "Document-0-1.doc",
+            label: "Level3",
             children: [
               {
                 id: "4",
-                label: "Document-0-1.doc",
+                label: "Level4",
               },
               {
                 id: "5",
-                label: "id 5",
+                label: "Level4",
                 children: [
                   {
                     id: "9",
-                    label: "children of id 5",
+                    label: "Level5",
                     children: [
                       {
                         id: "10",
-                        label: "children of id 9",
+                        label: "Level6",
                       },
                     ],
                   },
@@ -35,15 +35,15 @@ const treeData = [
           },
           {
             id: "6",
-            label: "Document-0-2.doc",
+            label: "Level3",
             children: [
               {
                 id: "7",
-                label: "Document-0-1.doc",
+                label: "Level4",
               },
               {
                 id: "8",
-                label: "Document-0-1.doc",
+                label: "Levrl4",
               },
             ],
           },

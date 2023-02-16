@@ -9,12 +9,20 @@ const initialState = {
   subMenuLocation: [],
   currentPage: "",
   currentLinks: [],
+  treeData: [],
+  search: "",
 };
 
 const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {
+    searchHandler: (state, { payload }) => {
+      state.search = payload;
+    },
+    treeDataHandler: (state, { payload }) => {
+      state.treeData = payload;
+    },
     currentPageHandler: (state, { payload }) => {
       // console.log(payload);
     },
@@ -49,5 +57,7 @@ export const {
   openSubmenu,
   currentPageHandler,
   closeSubmenu,
+  treeDataHandler,
+  searchHandler,
 } = userSlice.actions;
 export default userSlice.reducer;

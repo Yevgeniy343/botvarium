@@ -10,6 +10,7 @@ import {
   openSubmenu,
   closeSubmenu,
 } from "../../features/userSlice";
+import Search from "../Search/Search";
 
 const Navbar = () => {
   const { menuToggle } = useSelector((store) => store.user);
@@ -84,6 +85,9 @@ const Navbar = () => {
             </ul>
           </div>
 
+          {/* <div className="social-icons">
+            <Search />
+          </div> */}
           <ul className="social-icons">
             <li>
               <FaApple />

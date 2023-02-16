@@ -2,7 +2,7 @@ import Wrapper from "./wr-Tech";
 import Navbar from "../../Components/Navigation/Navbar";
 import Sidebar from "../../Components/Navigation/Sidebar";
 import SubMenu from "../../Components/Navigation/SubMenu";
-import Tree from "../../Components/MainList/Tree";
+import TechNav from "../../Components/Tech/TechNav";
 
 const Node = () => {
   return (
@@ -10,7 +10,7 @@ const Node = () => {
       <Navbar />
       <Sidebar />
       <SubMenu />
-      <Tree />
+      <TechNav />
     </Wrapper>
   );
 };

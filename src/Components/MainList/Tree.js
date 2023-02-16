@@ -1,10 +1,16 @@
 import Wrapper from "./wr-Tree";
-import { useState } from "react";
 import Branch from "./Branch";
 import treeData from "./TreeData";
+import React, { useEffect } from "react";
+import { treeDataHandler } from "../../features/userSlice";
+import { useDispatch } from "react-redux";
 
 const Tree = () => {
-  console.log(treeData);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(treeDataHandler(treeData), []);
+  });
   return (
     <Wrapper>
       {treeData.map((item) => (
