@@ -63,6 +63,11 @@ const Navbar = () => {
                 </button>
               </li>
               <li>
+                <button onMouseOver={displaySubmenu} className="link-btn">
+                  Технологии
+                </button>
+              </li>
+              <li>
                 <button
                   onMouseOver={displaySubmenu}
                   className="link-btn"

@@ -9,8 +9,10 @@ import IconReact from "../Tech/SvgReact";
 import IconAngular from "../Tech/SvgAngular";
 import IconNext from "../Tech/SvgNext";
 import IconDjango from "../Tech/SvgDjango";
+import { useNavigate } from "react-router-dom";
 
 const MpLine3 = () => {
+  const navigate = useNavigate();
   return (
     <Wrapper>
       <div className="header">
@@ -18,7 +20,7 @@ const MpLine3 = () => {
       </div>
 
       <div className="tech-list">
-        <div className="tech-item">
+        <div className="tech-item" onClick={() => navigate("/technology/node")}>
           <IconNode />
         </div>
         <div className="tech-item">

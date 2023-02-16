@@ -13,6 +13,10 @@ const sublinks = [
     ],
   },
   {
+    page: "Технологии",
+    links: [{ label: "Nodejs", url: "/technology/node" }],
+  },
+  {
     page: "Знания",
     links: [
       // { label: "Веб разработка", icon: <FaBattleNet />, url: "/" },
