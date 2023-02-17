@@ -22,6 +22,9 @@ code {
 }
 :root {
   --codeEditor: #55718d;
+  --codeEditor2: #1f4468;
+  --textEditir1: #add7ff;
+
   --gridSubcardBackground: #1f4468;
 
   --theme-ui-colors-black10: #fafbfc;
