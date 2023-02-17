@@ -5,6 +5,7 @@ const Wrapper = styled.div`
     font-family: "Source Code Pro", monospace;
   }
   margin: 1rem;
+  margin-left: 0;
   width: 100%;
   height: 100%;
 

@@ -27,7 +27,12 @@ const TechNav = () => {
   };
   return (
     <Wrapper variants={pathVariants} initial="hidden" animate="visible">
-      <motion.div variants={pathVariants} initial="hidden" animate="visible">
+      <motion.div
+        variants={pathVariants}
+        initial="hidden"
+        animate="visible"
+        className="icons-list"
+      >
         <div className="item">
           <div className="icon">
             <IconNode />
