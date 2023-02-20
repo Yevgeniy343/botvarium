@@ -10,8 +10,10 @@ import IconAngular from "../Tech/SvgAngular";
 import IconNext from "../Tech/SvgNext";
 import IconDjango from "../Tech/SvgDjango";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const TechNav = () => {
+  const navigate = useNavigate();
   const pathVariants = {
     hidden: {
       opacity: 0,
@@ -33,19 +35,19 @@ const TechNav = () => {
         animate="visible"
         className="icons-list"
       >
-        <div className="item">
+        <div className="item" onClick={() => navigate("/technology/nodejs")}>
           <div className="icon">
             <IconNode />
           </div>
           <p className="label">Nodejs</p>
         </div>
-        <div className="item">
+        <div className="item" onClick={() => navigate("/technology/docker")}>
           <div className="icon">
             <IconDocker />
           </div>
           <p className="label">Docker</p>
         </div>
-        <div className="item">
+        <div className="item" onClick={() => navigate("/technology/mongodb")}>
           <div className="icon">
             <IconMongo />
           </div>

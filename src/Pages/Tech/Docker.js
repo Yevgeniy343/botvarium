@@ -9,7 +9,7 @@ import Code from "../../Components/Tech/Code";
 import { useDispatch } from "react-redux";
 import { closeSubmenu } from "../../features/userSlice";
 
-const Node = () => {
+const Docker = () => {
   const dispatch = useDispatch();
 
   const codeString = `
@@ -121,4 +121,4 @@ const Node = () => {
   );
 };
 
-export default Node;
+export default Docker;

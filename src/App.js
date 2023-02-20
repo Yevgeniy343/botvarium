@@ -12,6 +12,7 @@ import PortalPage from "./Pages/Services/PortalPage";
 import MessengerPage from "./Pages/Services/MessengerPage";
 import Node from "./Pages/Tech/Node";
 import Docker from "./Pages/Tech/Docker";
+import Mongo from "./Pages/Tech/Mongo";
 import {
   RouterProvider,
   createBrowserRouter,
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
   { path: "/messenger", element: <MessengerPage /> },
   { path: "/technology/nodejs", element: <Node /> },
   { path: "/technology/docker", element: <Docker /> },
+  { path: "/technology/mongodb", element: <Mongo /> },
 ]);
 
 function App() {
