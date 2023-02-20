@@ -1,26 +1,26 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   p {
     font-family: "Source Code Pro", monospace;
   }
-  margin: 1rem;
-  margin-left: 0;
-  width: 100%;
-  height: 100%;
-
-  .icon {
-    width: 100%;
-    margin-bottom: 1rem;
-    svg {
-      width: 15%;
-      min-width: 150px;
+  .page {
+    .icon {
+      width: 100%;
+      margin-bottom: 1rem;
+      svg {
+        width: 15%;
+        min-width: 120px;
+        /* margin: 1rem; */
+      }
     }
   }
   .content {
-    display: flex;
-    flex-direction: column;
     overflow-y: auto;
+    height: 75vh;
+    margin-right: 1rem;
     ::-webkit-scrollbar {
       width: 10px;
     }
@@ -32,9 +32,7 @@ const Wrapper = styled.div`
       background: var(--theme-ui-colors-yellow50);
       border-radius: 10px;
     }
-    height: 75vh;
   }
-
   .about {
     height: max-content;
     border-radius: 5px;
@@ -95,19 +93,24 @@ const Wrapper = styled.div`
     margin-left: 2rem;
     font-weight: 700;
   }
+
   @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    .page {
+      .icon {
+        svg {
+          min-width: 150px;
+          margin: 1rem;
+        }
+      }
+    }
   }
   @media (min-width: 992px) {
-    .text {
-      margin: 1rem;
-      margin-left: 7rem;
-      font-weight: 700;
-    }
   }
   @media (min-width: 1140px) {
   }
   @media (min-width: 1340px) {
   }
 `;
-
 export default Wrapper;

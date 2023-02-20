@@ -1,22 +1,30 @@
 import Wrapper from "./wr-tech-irem";
-import IconNode from "../Tech/SvgNode";
 import IconDocker from "../Tech/SvgDocker";
-import IconMongo from "../Tech/SvgMongo";
-import IconRedis from "../Tech/SvgRedis";
-import IconPostgree from "../Tech/SvgPostgreSql";
-import IconCss from "../Tech/SvgCss";
-import IconReact from "../Tech/SvgReact";
-import IconAngular from "../Tech/SvgAngular";
-import IconNext from "../Tech/SvgNext";
-import IconDjango from "../Tech/SvgDjango";
-import { motion } from "framer-motion";
+
 import Code from "./Code";
 
 const Node = () => {
+  const codeString = `
+  const http = require('http');
+  
+  const hostname = '127.0.0.1';
+  const port = 3000;
+  
+  const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World');
+  });
+  
+  server.listen(port, hostname, () => {
+    console.log("Server running at");
+  });
+    `;
+
   return (
     <Wrapper>
       <div className="icon">
-        <IconNode />
+        <IconDocker />
       </div>
       <div className="content">
         <div className="about">
@@ -41,7 +49,7 @@ const Node = () => {
           </p>
         </div>
         <div style={{ display: "flex", justifyContent: "center" }}></div>
-        <Code />
+        <Code codeString={codeString} />
         <div className="stats">
           <p className="header">Примеры использования</p>
           <p className="text">

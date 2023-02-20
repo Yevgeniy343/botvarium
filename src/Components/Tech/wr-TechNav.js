@@ -1,69 +1,66 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  width: 100%;
-  overflow-x: scroll;
-  height: 20%;
+  overflow-x: auto;
   margin: 1rem;
-  border-radius: 5px;
-
-  border: 1px solid var(--theme-ui-colors-green50);
-  border-left: 10px solid var(--theme-ui-colors-green50);
-  background-color: var(--theme-ui-colors-green05);
-  box-shadow: var(--box-shadow-active);
-  padding-right: 1rem;
-  overflow-y: auto;
-  cursor: pointer;
-
+  margin-top: 0;
+  ::-webkit-scrollbar {
+    height: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--theme-ui-colors-yellow50);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--theme-ui-colors-yellow50);
+    border-radius: 10px;
+  }
   .icons-list {
     display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
   }
   .item {
-    height: 100%;
-    margin: 1rem 0.5rem;
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    border-left: 5px solid transparent;
-
-    :hover {
-      /* border-left: 5px solid var(--theme-ui-colors-blue50); */
-
-      transition: var(--transition2);
-    }
-  }
-  .icon {
-    margin-bottom: 1rem;
-    width: 110px;
+    margin: 1rem;
   }
   .label {
     display: none;
   }
-
+  svg {
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+  }
   @media (min-width: 768px) {
+    overflow-y: auto;
     width: 150px;
+    height: 93vh;
+    svg {
+      width: 80px;
+      height: 60px;
+      cursor: pointer;
+    }
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
     .icons-list {
-      display: block;
+      display: flex;
+      flex-direction: column;
     }
     .item {
+      /* margin: 1rem; */
     }
   }
-
   @media (min-width: 992px) {
-    width: 270px;
-
-    .label {
-      display: block;
+    width: 200px;
+    svg {
+      width: 100px;
+      height: 60px;
+      cursor: pointer;
     }
   }
-
   @media (min-width: 1140px) {
   }
   @media (min-width: 1340px) {
   }
 `;
-
 export default Wrapper;

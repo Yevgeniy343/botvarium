@@ -6,31 +6,10 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 // import { style } from "react-syntax-highlighter/dist/esm/styles/{hljs|prism}";
 import { atelierSeasideLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const Code = () => {
-  const codeString = `
-const http = require('http');
-
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
-
-server.listen(port, hostname, () => {
-  console.log("Server running at");
-});
-  `;
-
+const Code = ({ codeString }) => {
   return (
     <Wrapper>
-      <SyntaxHighlighter
-        language="javascript"
-        style={atelierSeasideLight}
-        className="editor"
-      >
+      <SyntaxHighlighter language="javascript" style={atelierSeasideLight}>
         {codeString}
       </SyntaxHighlighter>
     </Wrapper>
@@ -38,21 +17,13 @@ server.listen(port, hostname, () => {
 };
 
 const Wrapper = styled.section`
-  margin: 1rem;
-  /* width: min-content; */
-  /* height: min-content; */
-  align-self: center;
-  box-shadow: var(--box-shadow-active);
-
-  .editor {
-    max-width: 85vw;
-    border-radius: 5px;
-    font-weight: 900;
-  }
-  .code {
-    /* color: var(--theme-ui-colors-black10); */
-    /* margin: 0.6rem; */
-  }
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 95%;
+  border-radius: 5px;
+  font-weight: 900;
 
   @media (min-width: 768px) {
   }

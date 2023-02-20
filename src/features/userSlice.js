@@ -59,5 +59,6 @@ export const {
   closeSubmenu,
   treeDataHandler,
   searchHandler,
+  activeTechHandler,
 } = userSlice.actions;
 export default userSlice.reducer;

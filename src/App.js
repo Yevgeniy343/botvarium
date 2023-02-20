@@ -10,7 +10,7 @@ import LcClientsPage from "./Pages/Services/LcClientsPage";
 import LcPartnersPage from "./Pages/Services/LcPartnersPage";
 import PortalPage from "./Pages/Services/PortalPage";
 import MessengerPage from "./Pages/Services/MessengerPage";
-import Technology from "./Pages/Tech/Technology";
+import Node from "./Pages/Tech/Node";
 import {
   RouterProvider,
   createBrowserRouter,
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
   { path: "/partners-pa", element: <LcPartnersPage /> },
   { path: "/portal", element: <PortalPage /> },
   { path: "/messenger", element: <MessengerPage /> },
-  { path: "/technology", element: <Technology /> },
+  { path: "/technology/nodejs", element: <Node /> },
 ]);
 
 function App() {
