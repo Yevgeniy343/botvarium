@@ -18,6 +18,8 @@ import Postgre from "./Pages/Tech/Postgre";
 import React from "./Pages/Tech/React";
 import Css from "./Pages/Tech/Css";
 import Angular from "./Pages/Tech/Angular";
+import Next from "./Pages/Tech/Next";
+import Django from "./Pages/Tech/Django";
 import {
   RouterProvider,
   createBrowserRouter,
@@ -46,6 +48,8 @@ const router = createBrowserRouter([
   { path: "/technology/react", element: <React /> },
   { path: "/technology/css", element: <Css /> },
   { path: "/technology/angular", element: <Angular /> },
+  { path: "/technology/nextjs", element: <Next /> },
+  { path: "/technology/django", element: <Django /> },
 ]);
 
 function App() {

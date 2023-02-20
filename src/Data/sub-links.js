@@ -23,8 +23,8 @@ const sublinks = [
       { label: "React", url: "/technology/react" },
       { label: "CSS", url: "/technology/css" },
       { label: "Angular", url: "/technology/angular" },
-      { label: "Nextjs", url: "/technology" },
-      { label: "Django", url: "/technology" },
+      { label: "Nextjs", url: "/technology/nextjs" },
+      { label: "Django", url: "/technology/django" },
     ],
   },
   {

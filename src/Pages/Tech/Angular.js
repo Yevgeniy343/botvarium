@@ -9,7 +9,7 @@ import Code from "../../Components/Tech/Code";
 import { useDispatch } from "react-redux";
 import { closeSubmenu } from "../../features/userSlice";
 
-const Mongo = () => {
+const Angular = () => {
   const dispatch = useDispatch();
 
   const codeString = `
@@ -109,4 +109,4 @@ const Mongo = () => {
   );
 };
 
-export default Mongo;
+export default Angular;
