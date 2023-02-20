@@ -53,7 +53,7 @@ const TechNav = () => {
           </div>
           <p className="label">MongoDB</p>
         </div>
-        <div className="item">
+        <div className="item" onClick={() => navigate("/technology/redis")}>
           <div className="icon">
             <IconRedis />
           </div>
