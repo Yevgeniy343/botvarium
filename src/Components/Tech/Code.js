@@ -45,6 +45,7 @@ const Wrapper = styled.section`
   box-shadow: var(--box-shadow-active);
 
   .editor {
+    max-width: 85vw;
     border-radius: 5px;
     font-weight: 900;
   }
