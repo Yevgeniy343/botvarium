@@ -68,7 +68,7 @@ const TechNav = () => {
           </div>
           <p className="label"> PostgreeSQL</p>
         </div>
-        <div className="item">
+        <div className="item" onClick={() => navigate("/technology/react")}>
           <div className="icon">
             <IconReact />
           </div>

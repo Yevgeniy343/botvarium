@@ -20,7 +20,7 @@ const sublinks = [
       { label: "MongoDB", url: "/technology/mongodb" },
       { label: "Redis", url: "/technology/redis" },
       { label: "PostgreSQL", url: "/technology/postgresql" },
-      { label: "React", url: "/technology" },
+      { label: "React", url: "/technology/react" },
       { label: "CSS", url: "/technology" },
       { label: "Angular", url: "/technology" },
       { label: "Nextjs", url: "/technology" },

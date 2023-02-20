@@ -15,6 +15,7 @@ import Docker from "./Pages/Tech/Docker";
 import Mongo from "./Pages/Tech/Mongo";
 import Redis from "./Pages/Tech/Redis";
 import Postgre from "./Pages/Tech/Postgre";
+import React from "./Pages/Tech/React";
 import {
   RouterProvider,
   createBrowserRouter,
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
   { path: "/technology/mongodb", element: <Mongo /> },
   { path: "/technology/redis", element: <Redis /> },
   { path: "/technology/postgresql", element: <Postgre /> },
+  { path: "/technology/react", element: <React /> },
 ]);
 
 function App() {

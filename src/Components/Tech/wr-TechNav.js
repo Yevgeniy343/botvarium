@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   }
   @media (min-width: 768px) {
     overflow-y: auto;
-    width: 150px;
+    width: 170px;
     height: 93vh;
     svg {
       width: 80px;
@@ -51,7 +51,7 @@ const Wrapper = styled.div`
     }
   }
   @media (min-width: 992px) {
-    width: 200px;
+    width: 250px;
     svg {
       width: 100px;
       height: 60px;
