@@ -17,7 +17,7 @@ const Wrapper = styled.div`
     transition: var(--transition2);
     transform: scale(0);
     background: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .sidebar-wrapper.show {
     visibility: visible;
@@ -33,13 +33,13 @@ const Wrapper = styled.div`
     box-shadow: var(--dark-shadow);
     position: absolute;
     top: 0;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
   }
   .links-area {
     margin: 2rem 0;
   }
   .page {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
   .sidebar-links {
@@ -48,8 +48,7 @@ const Wrapper = styled.div`
     width: max-content;
     display: grid;
     justify-content: space-around;
-    grid-template-columns: 1fr;
-    /* row-gap: 0.5rem; */
+    grid-template-columns: 1fr 1fr;
   }
 
   .link {
@@ -59,6 +58,8 @@ const Wrapper = styled.div`
     align-items: center;
     margin: 0.5rem 0.5rem;
     padding: 0.6rem 0.6rem;
+    font-size: 1rem;
+    width: 150px;
     cursor: pointer;
     box-shadow: var(--dark-shadow);
     :hover {

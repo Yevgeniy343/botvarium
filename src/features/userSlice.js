@@ -41,6 +41,9 @@ const userSlice = createSlice({
     menuToggleHandler: (state) => {
       state.menuToggle = !state.menuToggle;
     },
+    closeSidebarleHandler: (state) => {
+      state.menuToggle = false;
+    },
     activeLinkDirection: (state, { payload }) => {
       state.activeLink = payload;
     },
@@ -60,5 +63,6 @@ export const {
   treeDataHandler,
   searchHandler,
   activeTechHandler,
+  closeSidebarleHandler,
 } = userSlice.actions;
 export default userSlice.reducer;

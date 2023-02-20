@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   .header {
     font-family: "Source Code Pro", monospace;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 3rem;
     p {
       color: var(--theme-ui-colors-purple50);

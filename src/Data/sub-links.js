@@ -27,15 +27,15 @@ const sublinks = [
       { label: "Django", url: "/technology/django" },
     ],
   },
-  {
-    page: "Знания",
-    links: [
-      // { label: "Веб разработка", icon: <FaBattleNet />, url: "/" },
-      // { label: "Личные кабинеты", icon: <FaBattleNet />, url: "/" },
-      // { label: "Технологии", icon: <FaBattleNet />, url: "/" },
-      { label: "Галактика", url: "/knowledge" },
-    ],
-  },
+  // {
+  //   page: "Знания",
+  //   links: [
+  //     // { label: "Веб разработка", icon: <FaBattleNet />, url: "/" },
+  //     // { label: "Личные кабинеты", icon: <FaBattleNet />, url: "/" },
+  //     // { label: "Технологии", icon: <FaBattleNet />, url: "/" },
+  //     { label: "Галактика", url: "/knowledge" },
+  //   ],
+  // },
   // {
   //   page: "company",
   //   links: [

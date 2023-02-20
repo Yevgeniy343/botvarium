@@ -36,10 +36,10 @@ const Container = styled.div`
 `;
 
 const BaseTheme = {
-  background: "red",
+  overflow: "auto",
 };
 const BaseTheme2 = {
-  background: "white",
+  overflow: "hidden",
 };
 
 export default MainPage;

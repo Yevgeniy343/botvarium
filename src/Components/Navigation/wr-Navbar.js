@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  background: #ffffff;
+
   p {
     font-family: "Source Code Pro", monospace;
   }
-  background: #ffffff;
   .burger {
     z-index: 3;
     position: sticky;

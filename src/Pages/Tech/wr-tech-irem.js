@@ -98,7 +98,7 @@ const Wrapper = styled.div`
     padding: 1rem;
   }
   span {
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
   @media (min-width: 768px) {
     display: flex;

@@ -1,10 +1,8 @@
 import Wrapper from "./wr-Sidebar";
 import sublinks from "../../Data/sub-links";
-import { closeSubmenu, menuToggleHandler } from "../../features/userSlice";
+import { menuToggleHandler } from "../../features/userSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { motion } from "framer-motion";
-import { BsXLg, BsDistributeVertical } from "react-icons/bs";
-import links from "../../Data/links-data";
+
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {

@@ -9,8 +9,8 @@ import {
   menuToggleHandler,
   openSubmenu,
   closeSubmenu,
+  closeSidebarleHandler,
 } from "../../features/userSlice";
-import Search from "../Search/Search";
 
 const Navbar = () => {
   const { menuToggle } = useSelector((store) => store.user);
@@ -31,17 +31,17 @@ const Navbar = () => {
     dispatch(openSubmenu({ page, center, bottom }));
   };
 
+  const Handler = () => {
+    navigate("/");
+    dispatch(closeSidebarleHandler());
+  };
+
   return (
     <Wrapper onMouseOver={submenuHandler}>
       <nav>
         <div className="nav-center">
           <div className="nav-header">
-            <img
-              className="logo"
-              src={logo}
-              alt="logo"
-              onClick={() => navigate("/")}
-            />
+            <img className="logo" src={logo} alt="logo" onClick={Handler} />
 
             <motion.div
               whileHover={{ scale: 1.2 }}
@@ -68,7 +68,7 @@ const Navbar = () => {
                   Технологии
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button
                   onMouseOver={displaySubmenu}
                   className="link-btn"
@@ -76,7 +76,7 @@ const Navbar = () => {
                 >
                   Знания
                 </button>
-              </li>
+              </li> */}
               {/* <li>
                 <button onMouseOver={displaySubmenu} className="link-btn">
                   company
