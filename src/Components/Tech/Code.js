@@ -3,8 +3,8 @@ import styled from "styled-components";
 // import Co from "../../MDX/page.mdx";
 
 import SyntaxHighlighter from "react-syntax-highlighter";
-
-import { vs } from "react-syntax-highlighter/dist/esm/styles/hljs";
+// import { style } from "react-syntax-highlighter/dist/esm/styles/{hljs|prism}";
+import { atelierSeasideLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const Code = () => {
   const codeString = `
@@ -26,28 +26,27 @@ server.listen(port, hostname, () => {
 
   return (
     <Wrapper>
-      <div className="editor">
-        <div className="code">
-          <SyntaxHighlighter language="javascript" style={vs}>
-            {codeString}
-          </SyntaxHighlighter>
-        </div>
-      </div>
+      <SyntaxHighlighter
+        language="javascript"
+        style={atelierSeasideLight}
+        className="editor"
+      >
+        {codeString}
+      </SyntaxHighlighter>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.section`
   margin: 1rem;
-  width: min-content;
-  height: min-content;
+  /* width: min-content; */
+  /* height: min-content; */
   align-self: center;
   box-shadow: var(--box-shadow-active);
 
   .editor {
     border-radius: 5px;
-    /* background-color: var(--codeEditor); */
-    padding: 1rem;
+    font-weight: 900;
   }
   .code {
     /* color: var(--theme-ui-colors-black10); */

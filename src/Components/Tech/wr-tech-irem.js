@@ -36,10 +36,10 @@ const Wrapper = styled.div`
   }
 
   .about {
-    /* min-height: 200px; */
+    height: max-content;
     border-radius: 5px;
     box-shadow: var(--box-shadow-active);
-
+    padding-bottom: 2rem;
     margin: 1rem;
     border-left: 10px solid var(--theme-ui-colors-yellow50);
     background-color: var(--theme-ui-colors-yellow10);
@@ -50,9 +50,9 @@ const Wrapper = styled.div`
   .where {
     border-radius: 5px;
     box-shadow: var(--box-shadow-active);
-
+    padding-bottom: 2rem;
     margin: 1rem;
-    min-height: 200px;
+    height: max-content;
     background-color: var(--theme-ui-colors-blue10);
     border-left: 10px solid var(--theme-ui-colors-blue50);
     p {
@@ -60,11 +60,12 @@ const Wrapper = styled.div`
     }
   }
   .stats {
+    padding-bottom: 2rem;
     border-radius: 5px;
     box-shadow: var(--box-shadow-active);
-
+    height: max-content;
     margin: 1rem;
-    min-height: 200px;
+    /* min-height: 200px; */
     background-color: var(--theme-ui-colors-purple10);
     border-left: 10px solid var(--theme-ui-colors-purple50);
     p {
@@ -74,9 +75,8 @@ const Wrapper = styled.div`
   .extra {
     border-radius: 5px;
     box-shadow: var(--box-shadow-active);
-
     margin: 1rem;
-    min-height: 200px;
+    height: max-content;
     background-color: var(--theme-ui-colors-green10);
     border-left: 10px solid var(--theme-ui-colors-green50);
     p {
@@ -91,7 +91,7 @@ const Wrapper = styled.div`
     /* text-decoration-style: wavy; */
   }
   .text {
-    margin: 1rem;
+    /* margin: 1rem; */
     margin-left: 2rem;
     font-weight: 700;
   }
@@ -100,7 +100,6 @@ const Wrapper = styled.div`
   @media (min-width: 992px) {
     .text {
       margin: 1rem;
-      margin-bottom: 3rem;
       margin-left: 7rem;
       font-weight: 700;
     }
