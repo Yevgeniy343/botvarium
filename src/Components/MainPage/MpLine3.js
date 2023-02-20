@@ -26,7 +26,10 @@ const MpLine3 = () => {
         >
           <IconNode />
         </div>
-        <div className="tech-item" onClick={() => navigate("/technology")}>
+        <div
+          className="tech-item"
+          onClick={() => navigate("/technology/docker")}
+        >
           <IconDocker />
         </div>
         <div className="tech-item" onClick={() => navigate("/technology")}>

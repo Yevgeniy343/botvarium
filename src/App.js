@@ -11,6 +11,7 @@ import LcPartnersPage from "./Pages/Services/LcPartnersPage";
 import PortalPage from "./Pages/Services/PortalPage";
 import MessengerPage from "./Pages/Services/MessengerPage";
 import Node from "./Pages/Tech/Node";
+import Docker from "./Pages/Tech/Docker";
 import {
   RouterProvider,
   createBrowserRouter,
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
   { path: "/portal", element: <PortalPage /> },
   { path: "/messenger", element: <MessengerPage /> },
   { path: "/technology/nodejs", element: <Node /> },
+  { path: "/technology/docker", element: <Docker /> },
 ]);
 
 function App() {

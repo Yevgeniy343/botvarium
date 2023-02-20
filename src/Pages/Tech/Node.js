@@ -72,7 +72,7 @@ const Node = () => {
               </p>
             </div>
             <div style={{ display: "flex", justifyContent: "center" }}></div>
-            <Code codeString={codeString} />
+            <Code codeString={codeString} language="javascript" />
             <div className="stats">
               <p className="header">Примеры использования</p>
               <p className="text">

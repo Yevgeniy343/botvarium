@@ -1,89 +1,123 @@
+import React from "react";
 import Wrapper from "./wr-tech-irem";
-import IconDocker from "../Tech/SvgDocker";
-
-import Code from "./Code";
+import TechNav from "../../Components/Tech/TechNav";
+import NavBar from "../../Components/Navigation/Navbar";
+import SideBar from "../../Components/Navigation/Sidebar";
+import SubMenu from "../../Components/Navigation/SubMenu";
+import IconDocker from "../../Components/Tech/SvgDocker";
+import Code from "../../Components/Tech/Code";
+import { useDispatch } from "react-redux";
+import { closeSubmenu } from "../../features/userSlice";
 
 const Node = () => {
-  const codeString = `
-  const http = require('http');
-  
-  const hostname = '127.0.0.1';
-  const port = 3000;
-  
-  const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World');
-  });
-  
-  server.listen(port, hostname, () => {
-    console.log("Server running at");
-  });
-    `;
+  const dispatch = useDispatch();
 
+  const codeString = `
+  FROM node:16-alpine as builder
+
+  WORKDIR /app
+  
+  COPY package.json ./
+  
+  RUN npm install
+  
+  COPY . .
+  
+  RUN npm run build
+  
+  FROM  nginx
+  
+  EXPOSE 80
+  
+  COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+  
+  COPY --from=builder /app/build /usr/share/nginx/html
+    `;
   return (
-    <Wrapper>
-      <div className="icon">
-        <IconDocker />
-      </div>
-      <div className="content">
-        <div className="about">
-          <p className="header">Node.js</p>
-          <p className="text">
-            Node.js (Node) — это платформа с открытым исходным кодом для работы
-            с языком JavaScript, построенная на движке V8. Она позволяет писать
-            серверный код для веб-приложений и динамических веб-страниц. Node.js
-            добавляет возможность JavaScript взаимодействовать с устройствами
-            ввода-вывода, подключать другие внешние библиотеки, написанные на
-            разных языках.
-          </p>
+    <div>
+      <NavBar />
+      <SideBar />
+      <SubMenu />
+      <Wrapper>
+        <div
+          className="nav"
+          onMouseOver={() => {
+            dispatch(closeSubmenu());
+          }}
+        >
+          <TechNav />
         </div>
-        <div className="where">
-          <p className="header">Где применяется</p>
-          <p className="text">
-            Node.js применяется преимущественно на сервере, выполняя роль
-            веб-сервера, но есть возможность разрабатывать и десктопные оконные
-            приложения и программировать микроконтроллеры. На Node.js можно
-            создавать программы для веб, Linux, OS X и Windows.
-            <p>Ниже представлен код ссоздания сервера на Node.js:</p>
-          </p>
+        <div
+          className="page"
+          onMouseOver={() => {
+            dispatch(closeSubmenu());
+          }}
+        >
+          <div className="icon">
+            <IconDocker />
+          </div>
+          <div className="content">
+            <div className="about">
+              <p className="header">Docker</p>
+              <p className="text">
+                Docker – это программная платформа для быстрой разработки,
+                тестирования и развертывания приложений. Docker упаковывает ПО в
+                стандартизованные блоки, которые называются контейнерами. Каждый
+                контейнер включает все необходимое для работы приложения:
+                библиотеки, системные инструменты, код и среду исполнения.
+                Благодаря Docker можно быстро развертывать и масштабировать
+                приложения в любой среде и сохранять уверенность в том, что код
+                будет работать.
+              </p>
+            </div>
+            <div className="where">
+              <p className="header">Применение</p>
+              <p className="text">
+                Использование Docker позволяет быстрее и эффективнее доставлять
+                или перемещать код, стандартизирует выполняемые приложениями
+                операции и в целом экономит средства, оптимизируя использование
+                ресурсов. Благодаря Docker пользователи получают объект, который
+                с высокой надежностью можно запускать на любой платформе.
+                Простой и понятный синтаксис Docker обеспечивает полный контроль
+                над выполняемыми операциями. Повсеместное внедрение контейнеров
+                подразумевает доступ к разнообразным инструментам и готовым
+                приложениям, которые можно использовать с Docker.
+              </p>
+              <p className="text">
+                Ниже представлен пример Dockerfile, в котором прописаны команды
+                по созданию образа приложения Node.js на сервере Nginx:{" "}
+              </p>
+            </div>
+            <div style={{ display: "flex", justifyContent: "center" }}></div>
+            <Code codeString={codeString} language="dockerfile" />
+            <div className="stats">
+              <p className="header">Разница с виртуальной машиной</p>
+              <p className="text">
+                Виртуальные машины (VM) создают виртуальное представление
+                аппаратного обеспечения сервера (то есть устраняют необходимость
+                непосредственно управлять таковым), а контейнеры создают
+                виртуальное представление серверной операционной системы. Docker
+                является операционной системой (или исполняемой средой) для
+                контейнеров. Программное ядро Docker устанавливается на каждый
+                сервер, на котором предполагается запускать контейнеры, и
+                предоставляет набор простых команд, которые можно использовать
+                для сборки, запуска и остановки контейнеров.
+              </p>
+            </div>
+            <div className="extra">
+              <p className="header">История появления</p>
+              <p className="text">
+                Проект Docker начат как внутренняя собственническая разработка
+                компании dotCloud, основанной Соломоном Хайксом (Solomon Hykes)
+                в 2008 году. В марте 2013 года код Docker был опубликован под
+                лицензией Apache 2.0. В декабре 2013 года объявлено о поддержке
+                развёртывания Docker-контейнеров в среде Google Compute Engine
+              </p>
+            </div>
+          </div>
         </div>
-        <div style={{ display: "flex", justifyContent: "center" }}></div>
-        <Code codeString={codeString} />
-        <div className="stats">
-          <p className="header">Примеры использования</p>
-          <p className="text">
-            Netflix: После перехода на технологию Node.js время запуска
-            снизилось на 70%. Раньше загрузка интерфейса Netflix занимала до
-            десяти секунд, а теперь — всего секунду.
-          </p>
-          <p className="text">
-            Nasa:Время доступа снизилось на 300%, что позволило пользователям
-            получать информацию за секунды, а не за часы.
-          </p>
-          <p className="text">
-            Uber:Node.js позволил Uber намного быстрее обрабатывать огромный
-            объём данных и многочисленные запросы пользователей; Благодаря
-            технологии Node.js компания Uber способна ежедневно обслуживать 14
-            миллионов поездок.
-          </p>
-          <p className="text">
-            eBay: eBay создала при помощи Node.js микросервисы, которые
-            выполняются в реальном времени и не перегружают инфраструктуру.
-            Node.js обеспечил масштабируемость, скорость и масштабируемость.
-          </p>
-        </div>
-        {/* <div className="extra">
-          <p className="header">extra</p>
-          <p className="text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
-            nisi commodi error velit aut. Ut quibusdam eligendi qui fugiat
-            laudantium maxime eius. Quia ipsam ea aspernatur quis omnis
-            nesciunt? Repellendus.
-          </p>
-        </div> */}
-      </div>
-    </Wrapper>
+      </Wrapper>
+    </div>
   );
 };
 

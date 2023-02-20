@@ -6,10 +6,10 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 // import { style } from "react-syntax-highlighter/dist/esm/styles/{hljs|prism}";
 import { atelierSeasideLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const Code = ({ codeString }) => {
+const Code = ({ codeString, language }) => {
   return (
     <Wrapper>
-      <SyntaxHighlighter language="javascript" style={atelierSeasideLight}>
+      <SyntaxHighlighter language={language} style={atelierSeasideLight}>
         {codeString}
       </SyntaxHighlighter>
     </Wrapper>

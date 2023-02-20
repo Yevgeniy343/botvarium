@@ -5,6 +5,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   p {
     font-family: "Source Code Pro", monospace;
+    letter-spacing: 0.08ch;
   }
   .page {
     .icon {
@@ -63,7 +64,6 @@ const Wrapper = styled.div`
     box-shadow: var(--box-shadow-active);
     height: max-content;
     margin: 1rem;
-    /* min-height: 200px; */
     background-color: var(--theme-ui-colors-purple10);
     border-left: 10px solid var(--theme-ui-colors-purple50);
     p {
@@ -71,6 +71,7 @@ const Wrapper = styled.div`
     }
   }
   .extra {
+    padding-bottom: 2rem;
     border-radius: 5px;
     box-shadow: var(--box-shadow-active);
     margin: 1rem;
@@ -92,6 +93,7 @@ const Wrapper = styled.div`
     /* margin: 1rem; */
     margin-left: 2rem;
     font-weight: 700;
+    padding: 1rem;
   }
 
   @media (min-width: 768px) {
@@ -101,7 +103,7 @@ const Wrapper = styled.div`
       .icon {
         svg {
           min-width: 150px;
-          margin: 1rem;
+          margin: 0.5rem 1rem;
         }
       }
     }
