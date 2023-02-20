@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   .page {
     .icon {
       width: 100%;
+      margin-top: 1rem;
       margin-bottom: 1rem;
       svg {
         width: 15%;
@@ -95,7 +96,9 @@ const Wrapper = styled.div`
     font-weight: 700;
     padding: 1rem;
   }
-
+  span {
+    text-decoration: underline;
+  }
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;

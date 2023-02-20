@@ -34,14 +34,20 @@ const MpLine3 = () => {
         </div>
         <div
           className="tech-item"
-          onClick={() => navigate("/technology/redis")}
+          onClick={() => navigate("/technology/mongodb")}
         >
           <IconMongo />
         </div>
-        <div className="tech-item" onClick={() => navigate("/technology")}>
+        <div
+          className="tech-item"
+          onClick={() => navigate("/technology/redis")}
+        >
           <IconRedis />
         </div>
-        <div className="tech-item" onClick={() => navigate("/technology")}>
+        <div
+          className="tech-item"
+          onClick={() => navigate("/technology/postgresql")}
+        >
           <IconPostgree />
         </div>
         <div className="tech-item" onClick={() => navigate("/technology")}>
