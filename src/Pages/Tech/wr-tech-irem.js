@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+
   p {
     font-family: "Source Code Pro", monospace;
     letter-spacing: 0.08ch;
@@ -13,8 +14,8 @@ const Wrapper = styled.div`
       margin-top: 1rem;
       margin-bottom: 1rem;
       svg {
-        width: 15%;
-        min-width: 120px;
+        max-height: 80px;
+        max-width: 100px;
         /* margin: 1rem; */
       }
     }

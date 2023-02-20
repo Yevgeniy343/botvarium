@@ -7,8 +7,8 @@ const Wrapper = styled.div`
   cursor: pointer;
 
   svg {
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
   }
   .tooltip {
     background-color: var(--theme-ui-colors-green05);

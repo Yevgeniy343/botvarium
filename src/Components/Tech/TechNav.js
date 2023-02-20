@@ -74,13 +74,13 @@ const TechNav = () => {
           </div>
           <p className="label">Reacts</p>
         </div>
-        <div className="item">
+        <div className="item" onClick={() => navigate("/technology/css")}>
           <div className="icon">
             <IconCss />
           </div>
           <p className="label">CSS</p>
         </div>
-        <div className="item">
+        <div className="item" onClick={() => navigate("/technology/angular")}>
           <div className="icon">
             <IconAngular />
           </div>

@@ -33,7 +33,8 @@ const Wrapper = styled.div`
   @media (min-width: 768px) {
     overflow-y: auto;
     width: 170px;
-    height: 93vh;
+    height: 90vh;
+    margin-top: 1rem;
     svg {
       width: 80px;
       height: 60px;

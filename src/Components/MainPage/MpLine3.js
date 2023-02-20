@@ -50,7 +50,7 @@ const MpLine3 = () => {
         >
           <IconPostgree />
         </div>
-        <div className="tech-item" onClick={() => navigate("/technology")}>
+        <div className="tech-item" onClick={() => navigate("/technology/css")}>
           <IconCss />
         </div>
         <div

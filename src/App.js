@@ -16,6 +16,8 @@ import Mongo from "./Pages/Tech/Mongo";
 import Redis from "./Pages/Tech/Redis";
 import Postgre from "./Pages/Tech/Postgre";
 import React from "./Pages/Tech/React";
+import Css from "./Pages/Tech/Css";
+import Angular from "./Pages/Tech/Angular";
 import {
   RouterProvider,
   createBrowserRouter,
@@ -42,6 +44,8 @@ const router = createBrowserRouter([
   { path: "/technology/redis", element: <Redis /> },
   { path: "/technology/postgresql", element: <Postgre /> },
   { path: "/technology/react", element: <React /> },
+  { path: "/technology/css", element: <Css /> },
+  { path: "/technology/angular", element: <Angular /> },
 ]);
 
 function App() {
