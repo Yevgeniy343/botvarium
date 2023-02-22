@@ -20,6 +20,7 @@ import Css from "./Pages/Tech/Css";
 import Angular from "./Pages/Tech/Angular";
 import Next from "./Pages/Tech/Next";
 import Django from "./Pages/Tech/Django";
+
 import {
   RouterProvider,
   createBrowserRouter,

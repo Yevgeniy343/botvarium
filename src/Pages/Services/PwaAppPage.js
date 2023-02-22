@@ -1,4 +1,4 @@
-import Wrapper from "./wr-WebAppPage";
+import Wrapper from "./wr-PwaAppPage";
 import Navbar from "../../Components/Navigation/Navbar";
 import Sidebar from "../../Components/Navigation/Sidebar";
 import SubMenu from "../../Components/Navigation/SubMenu";
@@ -6,6 +6,8 @@ import { Parallax } from "react-parallax";
 import { motion } from "framer-motion";
 import { closeSubmenu } from "../../features/userSlice";
 import { useDispatch } from "react-redux";
+import Ios from "../../Components/Phones/Ios";
+import Android from "../../Components/Phones/Android";
 
 const leftVariants1 = {
   hidden: { x: -500, opacity: 0 },
@@ -213,9 +215,16 @@ const PwaAppPage = () => {
           </p>
         </motion.div>
       </div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
+      <div className="phones">
+        <div className="ios">
+          <div className="ios-about">Добавление PWA на iOS</div>
+          <Ios />
+        </div>
+        <div className="android">
+          <div className="android-about">Добавление PWA на Android</div>
+          <Android />
+        </div>
+      </div>
     </Wrapper>
   );
 };

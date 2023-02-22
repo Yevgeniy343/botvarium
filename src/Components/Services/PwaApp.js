@@ -5,6 +5,9 @@ import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import SvgPwa from "../../svg/SvgPwa";
+import Android from "../Phones/Android";
+import Ios from "../Phones/Ios";
+import { isblEditorDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const pathVariants = {
   hidden: {
@@ -50,6 +53,10 @@ const PwaApp = () => {
         <div className="image">
           {/* <img src={img} alt="web" /> */}
           <SvgPwa />
+          {/* <div className="phones">
+            <Ios />
+            <Android />
+          </div> */}
         </div>
       </motion.div>
     </Wrapper>

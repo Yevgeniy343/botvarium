@@ -63,7 +63,9 @@ const Wrapper = styled.div`
       box-shadow: none;
     }
   }
-
+  .phones {
+    display: flex;
+  }
   @media (min-width: 768px) {
     .image {
       display: block;
