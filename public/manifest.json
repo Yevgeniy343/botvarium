@@ -1,0 +1,50 @@
+{
+  "name": "Botvarium",
+  "short_name": "B",
+  "icons": [
+    {
+      "src": "/images/icons/icon.ico",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/images/icons/icon.ico",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/images/icons/icon.ico",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/images/icons/icon.ico",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons/icon.ico",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/images/icons/icon.ico",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/images/icons/icon.ico",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fff",
+  "theme_color": "#3f51b5",
+  "description": "Botvarium progressive Web App",
+  "dir": "ltr",
+  "land": "en-US"
+}

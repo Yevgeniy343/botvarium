@@ -93,6 +93,7 @@ const Wrapper = styled.main`
 
   @media (min-width: 1320px) {
     grid-template-columns: 4fr 1fr;
+
     .left-block {
       margin-left: 3rem;
     }
